@@ -82,7 +82,7 @@ function Experience() {
                 <motion.div 
                   key={idx} 
                   className="glass-card" 
-                  style={{ marginBottom: '2.5rem', position: 'relative', border: '1px solid rgba(255, 0, 127, 0.1)' }}
+                  style={{ marginBottom: '2.5rem', position: 'relative', border: '1px solid rgba(255, 0, 127, 0.1)', overflow: 'hidden' }}
                   initial={{ opacity: 0, x: 50 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.6, delay: idx * 0.1 }}

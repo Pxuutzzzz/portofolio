@@ -90,8 +90,8 @@ function Home() {
                   position: 'absolute',
                   left: pos.left,
                   top: pos.top,
-                  width: '65px',
-                  height: '65px',
+                  width: window.innerWidth < 768 ? '50px' : '65px',
+                  height: window.innerWidth < 768 ? '50px' : '65px',
                   background: 'rgba(255, 0, 127, 0.05)',
                   backdropFilter: 'blur(5px)',
                   border: '1px solid rgba(255, 0, 127, 0.2)',
@@ -102,7 +102,8 @@ function Home() {
                   cursor: 'grab',
                   pointerEvents: 'auto',
                   boxShadow: '0 0 25px rgba(255, 0, 127, 0.1)',
-                  opacity: 0.9
+                  opacity: 0.9,
+                  zIndex: 10
                 }}
               animate={{
                 y: [0, (i % 2 === 0 ? -25 : 25), 0],
@@ -131,8 +132,8 @@ function Home() {
           })}
         </div>
 
-        <div className="container" style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', width: '100%', position: 'relative', zIndex: 1 }}>
-          <div className="hero-content animate-fade" style={{ flex: '1.2', minWidth: '300px', paddingRight: '2rem' }}>
+        <div className="container mobile-center" style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', width: '100%', position: 'relative', zIndex: 1 }}>
+          <div className="hero-content animate-fade" style={{ flex: '1', minWidth: '300px' }}>
             <motion.span 
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}

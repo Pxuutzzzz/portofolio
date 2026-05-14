@@ -346,6 +346,7 @@ h1, h2, h3, .logo-text {
   transform: translateY(-8px) rotate(-45deg);
 }
 
+/* Responsive Utilities */
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
@@ -355,15 +356,15 @@ h1, h2, h3, .logo-text {
     position: fixed;
     top: 0;
     right: -100%;
-    width: 80%;
+    width: 85%;
     height: 100vh;
-    background: rgba(10, 1, 4, 0.95);
+    background: rgba(10, 1, 4, 0.98);
     backdrop-filter: blur(20px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 2.5rem;
     transition: 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
     z-index: 1000;
     border-left: 1px solid var(--border);
@@ -378,16 +379,48 @@ h1, h2, h3, .logo-text {
     letter-spacing: 4px;
   }
 
-  .projects-grid {
-    grid-template-columns: 1fr;
+  .hero-name {
+    font-size: clamp(2rem, 10vw, 3.5rem) !important;
+    text-align: center;
+  }
+  
+  .section-tag {
+    text-align: center;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
   }
 
-  .hero-name {
-    font-size: 3rem;
+  .mobile-stack {
+    flex-direction: column !important;
+    gap: 2rem !important;
+    text-align: center;
+  }
+
+  .mobile-center {
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .mobile-hide {
+    display: none !important;
   }
 
   .container {
-    padding: 0 1.5rem;
+    padding: 0 1.2rem;
+  }
+
+  section {
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+  }
+
+  .glass-card {
+    padding: 1.5rem !important;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr !important;
   }
 }
 
@@ -440,7 +473,6 @@ h1, h2, h3, .logo-text {
   border-color: var(--primary);
   box-shadow: 0 0 10px var(--primary-glow);
 }
-
 
 /* Lanyard Badge Animation */
 .lanyard-container {

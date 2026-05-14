@@ -110,11 +110,11 @@ function About() {
       <section className="about" id="about" style={{ paddingTop: '120px', paddingBottom: '120px', minHeight: '80vh', position: 'relative', zIndex: 1 }}>
         <div className="container">
           
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4rem', alignItems: 'center', marginBottom: '100px' }}>
+          <div className="mobile-stack" style={{ display: 'flex', flexWrap: 'wrap', gap: '4rem', alignItems: 'center', marginBottom: '100px' }}>
             <div style={{ flex: '1.2', minWidth: '300px' }}>
               <div className="section-header animate-fade">
                 <span className="section-tag" style={{ letterSpacing: '4px' }}>{t.tag}</span>
-                <h2 className="hero-name" style={{ fontSize: '3.5rem', marginBottom: '2rem' }}>{t.title}</h2>
+                <h2 className="hero-name" style={{ marginBottom: '2rem' }}>{t.title}</h2>
                 
                 {/* Interesting Bio Container */}
                 <motion.div 
@@ -149,7 +149,7 @@ function About() {
               </div>
             </div>
 
-            <div style={{ flex: '0.8', minWidth: '300px', display: 'flex', justifyContent: 'center', height: '500px', position: 'relative' }}>
+            <div className="mobile-hide" style={{ flex: '0.8', minWidth: '300px', display: 'flex', justifyContent: 'center', height: '500px', position: 'relative' }}>
                <div style={{ position: 'absolute', width: '100%', height: '100%' }}>
                   <Lanyard position={[0, 0, 18]} gravity={[0, -40, 0]} />
                </div>
