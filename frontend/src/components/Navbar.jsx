@@ -1,7 +1,9 @@
+import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 
 function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
   const { language, toggleLanguage } = useLanguage();
   const isActive = (path) => location.pathname === path ? 'active' : '';
@@ -14,30 +16,37 @@ function Navbar() {
   const t = translations[language];
 
   return (
-    <nav className="navbar" style={{ background: 'var(--bg-nav)', backdropFilter: 'var(--glass)', padding: '1rem 0', borderBottom: '1px solid var(--border)' }}>
+    <nav className={`navbar ${isOpen ? 'nav-open' : ''}`} style={{ background: 'var(--bg-nav)', backdropFilter: 'var(--glass)', padding: '1rem 0', borderBottom: '1px solid var(--border)' }}>
       <div className="container nav-container">
         <div className="logo">
-          <Link to="/" className="logo-text">&lt;PIC/&gt;</Link>
+          <Link to="/" className="logo-text" onClick={() => setIsOpen(false)}>&lt;PIC/&gt;</Link>
         </div>
-        <ul className="nav-links">
-          <li><Link to="/" className={`nav-link ${isActive('/')}`}>{t.home}</Link></li>
-          <li><Link to="/about" className={`nav-link ${isActive('/about')}`}>{t.about}</Link></li>
-          <li><Link to="/projects" className={`nav-link ${isActive('/projects')}`}>{t.projects}</Link></li>
-          <li><Link to="/experience" className={`nav-link ${isActive('/experience')}`}>{t.experience}</Link></li>
-          <li><Link to="/contact" className={`nav-link ${isActive('/contact')}`}>{t.contact}</Link></li>
-          <li>
+
+        {/* Hamburger Menu Icon */}
+        <button className="hamburger" onClick={() => setIsOpen(!isOpen)} aria-label="Toggle menu">
+          <div className={`line ${isOpen ? 'open' : ''}`}></div>
+          <div className={`line ${isOpen ? 'open' : ''}`}></div>
+          <div className={`line ${isOpen ? 'open' : ''}`}></div>
+        </button>
+
+        <ul className={`nav-links ${isOpen ? 'active' : ''}`}>
+          <li><Link to="/" className={`nav-link ${isActive('/')}`} onClick={() => setIsOpen(false)}>{t.home}</Link></li>
+          <li><Link to="/about" className={`nav-link ${isActive('/about')}`} onClick={() => setIsOpen(false)}>{t.about}</Link></li>
+          <li><Link to="/projects" className={`nav-link ${isActive('/projects')}`} onClick={() => setIsOpen(false)}>{t.projects}</Link></li>
+          <li><Link to="/experience" className={`nav-link ${isActive('/experience')}`} onClick={() => setIsOpen(false)}>{t.experience}</Link></li>
+          <li><Link to="/contact" className={`nav-link ${isActive('/contact')}`} onClick={() => setIsOpen(false)}>{t.contact}</Link></li>
+          <li className="nav-lang">
             <button 
-              onClick={toggleLanguage} 
+              onClick={() => { toggleLanguage(); setIsOpen(false); }} 
               style={{ 
                 background: 'rgba(255,255,255,0.05)', 
                 border: '1px solid var(--border)', 
                 color: 'var(--secondary)', 
-                padding: '4px 8px', 
+                padding: '6px 12px', 
                 borderRadius: '4px', 
                 cursor: 'pointer',
-                fontSize: '0.75rem',
-                fontWeight: '700',
-                marginLeft: '10px'
+                fontSize: '0.8rem',
+                fontWeight: '700'
               }}
             >
               {language}
