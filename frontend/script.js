@@ -282,6 +282,24 @@ document.addEventListener('DOMContentLoaded', () => {
         AOS.refresh();
       }
     });
-  });
-});
+// ===== ID CARD 3D TILT EFFECT =====
+const idCardWrap = document.getElementById('idCardWrap');
+const idCard = document.getElementById('idCard');
 
+if (idCardWrap && idCard && window.matchMedia('(pointer: fine)').matches) {
+  idCardWrap.addEventListener('mousemove', (e) => {
+    const rect = idCard.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+    const rotateX = ((y - centerY) / centerY) * -10;
+    const rotateY = ((x - centerX) / centerX) * 10;
+
+    idCard.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
+  });
+
+  idCardWrap.addEventListener('mouseleave', () => {
+    idCard.style.transform = '';
+  });
+}
