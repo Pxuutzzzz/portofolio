@@ -282,6 +282,9 @@ document.addEventListener('DOMContentLoaded', () => {
         AOS.refresh();
       }
     });
+  });
+});
+
 // ===== ID CARD 3D TILT EFFECT =====
 const idCardWrap = document.getElementById('idCardWrap');
 const idCard = document.getElementById('idCard');
