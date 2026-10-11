@@ -106,29 +106,79 @@ document.addEventListener('keydown', e => {
   }
 });
 
-// ===== CONTACT FORM =====
-function handleSubmit(e) {
+// ===== CONTACT FORM (INTEGRATED WITH EMAIL) =====
+async function handleSubmit(e) {
   e.preventDefault();
   const btn = document.getElementById('submitBtn');
   const success = document.getElementById('formSuccess');
+  const error = document.getElementById('formError');
   const form = document.getElementById('contactForm');
 
-  btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+  const name = document.getElementById('name').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const subject = document.getElementById('subject').value.trim();
+  const message = document.getElementById('message').value.trim();
+
+  if (!name || !email || !message) return;
+
+  // Reset notifications
+  if (success) success.classList.remove('show');
+  if (error) error.classList.remove('show');
+
+  // Loading state
+  const originalBtnContent = '<i class="fas fa-paper-plane"></i> Send Message';
+  btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Mengirim Pesan...';
   btn.disabled = true;
 
-  setTimeout(() => {
-    btn.innerHTML = '<i class="fas fa-check"></i> Sent!';
-    btn.style.background = 'linear-gradient(135deg, #22c55e, #16a34a)';
-    success.classList.add('show');
-    form.reset();
+  try {
+    const response = await fetch("https://formsubmit.co/ajax/putriindah2343@gmail.com", {
+      method: "POST",
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify({
+        name: name,
+        email: email,
+        _subject: `[Portfolio Contact] ${subject || 'New Message'} - from ${name}`,
+        message: message,
+        _captcha: "false",
+        _template: "table"
+      })
+    });
 
-    setTimeout(() => {
-      btn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
-      btn.style.background = '';
-      btn.disabled = false;
-      success.classList.remove('show');
-    }, 4000);
-  }, 1800);
+    const data = await response.json();
+
+    if (response.ok && (data.success === "true" || data.success === true || response.status === 200)) {
+      btn.innerHTML = '<i class="fas fa-check"></i> Pesan Terkirim!';
+      btn.style.background = 'linear-gradient(135deg, #22c55e, #16a34a)';
+      if (success) {
+        success.innerHTML = '<i class="fas fa-check-circle"></i> Pesan berhasil dikirim ke <strong>putriindah2343@gmail.com</strong>! Terima kasih 🌸';
+        success.classList.add('show');
+      }
+      form.reset();
+
+      setTimeout(() => {
+        btn.innerHTML = originalBtnContent;
+        btn.style.background = '';
+        btn.disabled = false;
+        if (success) success.classList.remove('show');
+      }, 6000);
+    } else {
+      throw new Error(data.message || 'Gagal mengirim pesan');
+    }
+  } catch (err) {
+    console.warn('FormSubmit fetch failed, showing fallback mailto option:', err);
+    btn.innerHTML = originalBtnContent;
+    btn.disabled = false;
+
+    const mailtoUrl = `mailto:putriindah2343@gmail.com?subject=${encodeURIComponent('[Portfolio Contact] ' + (subject || 'Pesan Baru'))}&body=${encodeURIComponent('Nama: ' + name + '\nEmail: ' + email + '\n\nPesan:\n' + message)}`;
+
+    if (error) {
+      error.innerHTML = `<i class="fas fa-exclamation-triangle"></i> Terkendala jaringan. <a href="${mailtoUrl}" target="_blank">Klik di sini untuk langsung kirim via Email App / Gmail</a>`;
+      error.classList.add('show');
+    }
+  }
 }
 
 // ===== SKILL BAR ANIMATION ON SCROLL =====
@@ -206,3 +256,32 @@ const statsObserver = new IntersectionObserver((entries) => {
 
 const heroStats = document.querySelector('.hero-stats');
 if (heroStats) statsObserver.observe(heroStats);
+
+// ===== PROJECT FILTER =====
+document.addEventListener('DOMContentLoaded', () => {
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const projectCards = document.querySelectorAll('.project-card');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.getAttribute('data-filter');
+
+      projectCards.forEach(card => {
+        const categories = card.getAttribute('data-category') || '';
+        if (filter === 'all' || categories.split(' ').includes(filter)) {
+          card.style.display = '';
+          card.style.animation = 'fadeIn 0.4s ease forwards';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+      // Refresh AOS positions
+      if (typeof AOS !== 'undefined') {
+        AOS.refresh();
+      }
+    });
+  });
+});
+

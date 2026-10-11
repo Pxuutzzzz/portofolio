@@ -1,0 +1,14 @@
+# Temporary & build tools
+apache-maven-*/
+node-*/
+maven.zip
+react-bits.zip
+react-bits-main/
+frontend/
+src/
+target/
+pom.xml
+*.py
+*.log
+.DS_Store
+Thumbs.db
