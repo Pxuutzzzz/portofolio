@@ -1,14 +1,1732 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-    <title>Putri Indah Cahyani | Portfolio</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Putri Indah Cahyani – Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Putri Indah Cahyani – Information Technology Student passionate about web development and technology." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Devicon (for tech icons) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+  <!-- AOS (Animate On Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-text">Putri<span class="logo-accent">.</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle dark mode">
+          <i class="fas fa-moon" id="darkModeIcon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="hero-container">
+      <div class="hero-content" data-aos="fade-right" data-aos-duration="900">
+        <div class="hero-badge">
+          <i class="fas fa-sparkles"></i>
+          <span>Fresh Graduate · Available for Opportunities</span>
+        </div>
+        <h1 class="hero-name">
+          Hi, I'm <span class="name-highlight">Putri Indah</span><br />Cahyani <span class="wave">👋</span>
+        </h1>
+        <p class="hero-status">
+          <i class="fas fa-user-graduate"></i>
+          Fresh Graduate in Information Technology
+        </p>
+        <p class="hero-tagline">
+          "Information Technology Graduate passionate about Web Development, Machine Learning, Data Engineering, and Data Processing"
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fas fa-eye"></i>
+            View Portfolio
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <i class="fas fa-paper-plane"></i>
+            Contact Me
+          </a>
+          <a href="mailto:putriindah2343@gmail.com" class="btn btn-outline">
+            <i class="fas fa-envelope"></i>
+            Hire Me
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number">3.80</span>
+            <span class="stat-label">GPA / 4.00</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number">15+</span>
+            <span class="stat-label">Tech Skills</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number">14+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image" data-aos="fade-left" data-aos-duration="900">
+        <div class="profile-ring">
+          <div class="profile-circle">
+            <img src="Image/profile1.jpeg" alt="Putri Indah Cahyani" class="profile-img" id="profileImg" />
+            <div class="profile-placeholder" id="profilePlaceholder">
+              <i class="fas fa-user"></i>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">Get to Know Me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-wrap" data-aos="fade-right" data-aos-duration="800">
+          <div class="about-img-card">
+            <div class="about-img-inner">
+              <img src="Image/profile2.jpeg" alt="Putri Indah Cahyani" class="about-img" id="aboutImg" />
+              <div class="about-img-placeholder" id="aboutImgPlaceholder">
+                <i class="fas fa-user-circle"></i>
+              </div>
+            </div>
+            <div class="about-info-chip">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Yogyakarta, Indonesia</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-content" data-aos="fade-left" data-aos-duration="800">
+          <p class="about-text">
+            Hello! I'm <strong>Putri Indah Cahyani</strong>, a Fresh Graduate in <strong>Information Technology</strong> from <strong>Universitas 'Aisyiyah Yogyakarta</strong> with a GPA of <strong>3.80 / 4.00</strong>.
+          </p>
+          <p class="about-text">
+            I have comprehensive experience in <strong>web development, data processing, machine learning, and data engineering</strong>. Skilled in <strong>Laravel, PHP, Python, MySQL, PostgreSQL, Excel, and Google Sheets</strong>, with proven hands-on experience in <strong>Quality Assurance (QA), data validation, documentation, administrative support, Tracer Study, and accreditation</strong>.
+          </p>
+          <p class="about-text">
+            Detail-oriented, adaptive, and proficient in problem-solving, communication, and both independent and team-based work.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <div class="highlight-icon"><i class="fas fa-graduation-cap"></i></div>
+              <div>
+                <strong>Universitas 'Aisyiyah Yogyakarta</strong>
+                <p>S1 Information Technology | GPA: 3.80 / 4.00 (2022 – 2026)</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon"><i class="fas fa-laptop-code"></i></div>
+              <div>
+                <strong>Web &amp; Data Engineering</strong>
+                <p>Laravel, Python, Apache Airflow, dbt, SQL, Machine Learning</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon"><i class="fas fa-certificate"></i></div>
+              <div>
+                <strong>Certified Business Intelligence Analyst</strong>
+                <p>BNSP – LSP Digital (2026 – 2029)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION SECTION ===== -->
+  <section class="education" id="education">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Education History</span>
+        <h2 class="section-title">Academic Journey</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
+          <div class="timeline-icon">
+            <i class="fas fa-school"></i>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-period">
+              <i class="fas fa-calendar-alt"></i>
+              2019 – 2022
+            </div>
+            <h3 class="timeline-title">SMA Negeri 1 Bukit Kemuning</h3>
+            <p class="timeline-subtitle">Science</p>
+            <p class="timeline-desc">Completed high school majoring in Science while actively participating in OSIS (Student Council) and
+              PMR (Youth Red Cross), developing leadership, social awareness, and teamwork skills.</p>
+            <div class="timeline-tags">
+              <span class="tag">Science</span>
+              <span class="tag">OSIS</span>
+              <span class="tag">PMR</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item timeline-item-right" data-aos="fade-left" data-aos-delay="200">
+          <div class="timeline-icon current">
+            <i class="fas fa-user-graduate"></i>
+          </div>
+          <div class="timeline-card active">
+            <div class="timeline-period">
+              <i class="fas fa-calendar-alt"></i>
+              2022 – 2026
+            </div>
+            <div class="current-badge" style="background:rgba(34,197,94,0.15);color:#16a34a;">
+              <i class="fas fa-check-circle" style="color:#16a34a;"></i> Graduated · GPA 3.80
+            </div>
+            <h3 class="timeline-title">Universitas 'Aisyiyah Yogyakarta</h3>
+            <p class="timeline-subtitle">S1 Information Technology | GPA: 3.80 / 4.00</p>
+            <p class="timeline-desc">Graduated with high honors (GPA 3.80/4.00). Actively focused on Web Development, Machine Learning, Data Engineering, and contributed significantly to the Tracer Study &amp; Accreditation Team as well as HIMA ITECH.</p>
+            <div class="timeline-tags">
+              <span class="tag" style="background:rgba(236,72,153,0.1);color:var(--pink-accent);">GPA 3.80 / 4.00</span>
+              <span class="tag">Fresh Graduate</span>
+              <span class="tag">HIMA ITECH</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Expertise</span>
+        <h2 class="section-title">Skills &amp; Abilities</h2>
+      </div>
+      <div class="skills-grid">
+        <!-- Hard Skills -->
+        <div class="skills-group" data-aos="fade-right" data-aos-duration="800">
+          <div class="skills-group-header">
+            <div class="skills-group-icon"><i class="fas fa-laptop-code"></i></div>
+            <h3>Technical &amp; Hard Skills</h3>
+          </div>
+          <div class="skill-cards">
+            <!-- Web Development -->
+            <div class="skill-card" data-aos="zoom-in" data-aos-delay="50">
+              <div class="skill-icon-wrap laravel-color">
+                <i class="devicon-laravel-plain"></i>
+              </div>
+              <span class="skill-name">Laravel</span>
+            </div>
+            <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
+              <div class="skill-icon-wrap php-color">
+                <i class="devicon-php-plain"></i>
+              </div>
+              <span class="skill-name">PHP</span>
+            </div>
+            <div class="skill-card" data-aos="zoom-in" data-aos-delay="150">
+              <div class="skill-icon-wrap" style="background:rgba(55,118,171,0.1);color:#3776ab;">
+                <i class="devicon-python-plain"></i>
+              </div>
+              <span class="skill-name">Python</span>
+            </div>
+            <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+              <div class="skill-icon-wrap" style="background:rgba(65,184,131,0.1);color:#41b883;">
+                <i class="devicon-vuejs-plain"></i>
+              </div>
+              <span class="skill-name">Vue.js</span>
+            </div>
+            <div class="skill-card" data-aos="zoom-in" data-aos-delay="250">
+              <div class="skill-icon-wrap js-color">
+                <i class="devicon-javascript-plain"></i>
+              </div>
+              <span class="skill-name">JavaScript</span>
+            </div>
+            <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
+              <div class="skill-icon-wrap html-color">
+                <i class="devicon-html5-plain"></i>
+              </div>
+              <span class="skill-name">HTML / CSS</span>
+            </div>
+            <div class="skill-card" data-aos="zoom-in" data-aos-delay="350">
+              <div class="skill-icon-wrap" style="background:rgba(56,189,248,0.1);color:#0284c7;">
+                <i class="devicon-tailwindcss-plain"></i>
+              </div>
+              <span class="skill-name">Tailwind / Bootstrap</span>
+            </div>
+            <!-- Machine Learning & Data Engineering -->
+            <div class="skill-card" data-aos="zoom-in" data-aos-delay="400">
+              <div class="skill-icon-wrap" style="background:rgba(234,88,12,0.1);color:#ea580c;">
+                <i class="fas fa-brain"></i>
+              </div>
+              <span class="skill-name">Scikit-learn &amp; XGBoost</span>
+            </div>
+            <div class="skill-card" data-aos="zoom-in" data-aos-delay="450">
+              <div class="skill-icon-wrap" style="background:rgba(16,185,129,0.1);color:#10b981;">
+                <i class="fas fa-wind"></i>
+              </div>
+              <span class="skill-name">Apache Airflow</span>
+            </div>
+            <div class="skill-card" data-aos="zoom-in" data-aos-delay="500">
+              <div class="skill-icon-wrap" style="background:rgba(255,105,64,0.1);color:#ff6940;">
+                <i class="fas fa-project-diagram"></i>
+              </div>
+              <span class="skill-name">dbt &amp; ETL Pipeline</span>
+            </div>
+            <!-- Databases & Tools -->
+            <div class="skill-card" data-aos="zoom-in" data-aos-delay="550">
+              <div class="skill-icon-wrap mysql-color">
+                <i class="devicon-mysql-plain"></i>
+              </div>
+              <span class="skill-name">MySQL</span>
+            </div>
+            <div class="skill-card" data-aos="zoom-in" data-aos-delay="600">
+              <div class="skill-icon-wrap postgres-color">
+                <i class="devicon-postgresql-plain"></i>
+              </div>
+              <span class="skill-name">PostgreSQL</span>
+            </div>
+            <div class="skill-card" data-aos="zoom-in" data-aos-delay="650">
+              <div class="skill-icon-wrap" style="background:rgba(16,185,129,0.1);color:#10b981;">
+                <i class="fas fa-file-excel"></i>
+              </div>
+              <span class="skill-name">Excel &amp; Google Sheets</span>
+            </div>
+            <div class="skill-card" data-aos="zoom-in" data-aos-delay="700">
+              <div class="skill-icon-wrap qa-color">
+                <i class="fas fa-check-double"></i>
+              </div>
+              <span class="skill-name">Quality Assurance (QA)</span>
+            </div>
+            <div class="skill-card" data-aos="zoom-in" data-aos-delay="750">
+              <div class="skill-icon-wrap java-color">
+                <i class="devicon-java-plain"></i>
+              </div>
+              <span class="skill-name">Java &amp; OOP</span>
+            </div>
+            <div class="skill-card" data-aos="zoom-in" data-aos-delay="800">
+              <div class="skill-icon-wrap git-color">
+                <i class="devicon-git-plain"></i>
+              </div>
+              <span class="skill-name">Git &amp; GitHub</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="skills-group" data-aos="fade-left" data-aos-duration="800">
+          <div class="skills-group-header">
+            <div class="skills-group-icon"><i class="fas fa-heart"></i></div>
+            <h3>Professional Soft Skills</h3>
+          </div>
+          <div class="soft-skill-cards">
+            <div class="soft-card" data-aos="zoom-in" data-aos-delay="100">
+              <div class="soft-icon"><i class="fas fa-users"></i></div>
+              <h4>Teamwork &amp; Collaboration</h4>
+              <p>Effective in cross-functional team collaboration, synchronization, and peer review.</p>
+            </div>
+            <div class="soft-card" data-aos="zoom-in" data-aos-delay="150">
+              <div class="soft-icon"><i class="fas fa-check-circle"></i></div>
+              <h4>Data Validation &amp; Detail</h4>
+              <p>Meticulous precision in data auditing, tracer study monitoring, and document archiving.</p>
+            </div>
+            <div class="soft-card" data-aos="zoom-in" data-aos-delay="200">
+              <div class="soft-icon"><i class="fas fa-comments"></i></div>
+              <h4>Communication</h4>
+              <p>Clear, articulate communication with alumni, stakeholders, and multidisciplinary teams.</p>
+            </div>
+            <div class="soft-card" data-aos="zoom-in" data-aos-delay="250">
+              <div class="soft-icon"><i class="fas fa-clock"></i></div>
+              <h4>Time Management</h4>
+              <p>Disciplined prioritization to meet demanding project and accreditation deadlines.</p>
+            </div>
+            <div class="soft-card" data-aos="zoom-in" data-aos-delay="300">
+              <div class="soft-icon"><i class="fas fa-lightbulb"></i></div>
+              <h4>Problem Solving</h4>
+              <p>Analytical thinking to diagnose system bugs, optimize workflows, and develop ML pipelines.</p>
+            </div>
+            <div class="soft-card" data-aos="zoom-in" data-aos-delay="350">
+              <div class="soft-icon"><i class="fas fa-sync-alt"></i></div>
+              <h4>Adaptability</h4>
+              <p>Fast learner quick to adopt new frameworks, architectures, and emerging technologies.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS & TRAINING SECTION ===== -->
+  <section class="certifications" id="certifications">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Credentials</span>
+        <h2 class="section-title">Certifications &amp; Training</h2>
+      </div>
+      <div class="cert-grid">
+        <div class="cert-card" data-aos="fade-right" data-aos-duration="800">
+          <div class="cert-icon">
+            <i class="fas fa-certificate"></i>
+          </div>
+          <div class="cert-info">
+            <span class="tag" style="background:rgba(34,197,94,0.15);color:#16a34a;margin-bottom:8px;display:inline-block;"><i class="fas fa-check-circle"></i> Certified</span>
+            <h3>Business Intelligence Analyst</h3>
+            <p class="cert-issuer"><i class="fas fa-building"></i> BNSP – LSP Digital</p>
+            <p class="cert-date"><i class="fas fa-calendar-alt"></i> Aug 2026 – Aug 2029</p>
+            <p class="cert-desc">Certified national professional competency in Business Intelligence, data analytics, dimensional modeling, KPI dashboards, and business insights generation.</p>
+          </div>
+        </div>
+
+        <div class="cert-card" data-aos="fade-left" data-aos-duration="800">
+          <div class="cert-icon" style="background:linear-gradient(135deg,#3b82f6,#6366f1);color:#fff;">
+            <i class="fas fa-chalkboard-teacher"></i>
+          </div>
+          <div class="cert-info">
+            <span class="tag" style="background:rgba(59,130,246,0.15);color:#2563eb;margin-bottom:8px;display:inline-block;"><i class="fas fa-award"></i> Intensive Training</span>
+            <h3>Business Intelligence Analyst Training</h3>
+            <p class="cert-issuer"><i class="fas fa-university"></i> CV. Humanika Technoria</p>
+            <p class="cert-date"><i class="fas fa-calendar-alt"></i> Aug 2026</p>
+            <p class="cert-desc">Comprehensive training in data warehouse design, ETL workflows, data visualization, business reporting, and practical analytics problem-solving.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Portfolio</span>
+        <h2 class="section-title">My Projects</h2>
+        <p class="section-subtitle">Showcase of web applications, machine learning systems, data engineering pipelines, and health tech solutions</p>
+      </div>
+
+      <!-- Project Category Filters -->
+      <div class="project-filters" data-aos="fade-up" data-aos-delay="100">
+        <button class="filter-btn active" data-filter="all">All Projects (18)</button>
+        <button class="filter-btn" data-filter="web">Web Development</button>
+        <button class="filter-btn" data-filter="ml">Machine Learning &amp; AI</button>
+        <button class="filter-btn" data-filter="data">Data Engineering &amp; Analytics</button>
+        <button class="filter-btn" data-filter="other">Other Applications</button>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1: MBG Monitor (Featured) -->
+        <div class="project-card featured" data-category="web" data-aos="fade-up" data-aos-delay="100">
+          <div class="featured-badge"><i class="fas fa-star"></i> Featured</div>
+          <div class="project-header">
+            <div class="project-icon vue-bg">
+              <i class="devicon-vuejs-plain"></i>
+            </div>
+            <div class="project-category">Full Stack Web</div>
+          </div>
+          <h3 class="project-title">MBG Monitor</h3>
+          <p class="project-desc">A full-stack web application for real-time monitoring of Free Nutritional Meal (MBG) distribution, equipped with courier GPS tracking via WebSocket, nutrition menu management, financial reports, and a public dashboard based on Laravel &amp; Vite.</p>
+          <div class="project-tech">
+            <span class="tech-badge"><i class="devicon-laravel-plain"></i> Laravel</span>
+            <span class="tech-badge"><i class="devicon-vuejs-plain"></i> Vue.js</span>
+            <span class="tech-badge"><i class="fas fa-map-marker-alt"></i> GPS Tracking</span>
+            <span class="tech-badge"><i class="fas fa-bolt"></i> WebSocket</span>
+          </div>
+          <div class="project-footer">
+            <button class="btn-detail" onclick="openModal('modal_mbg')">
+              <i class="fas fa-external-link-alt"></i> View Details
+            </button>
+            <a href="https://github.com/Pxuutzzzz/mbg-monitoring" target="_blank" class="btn-code" title="View Source on GitHub">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2: Nexora (Featured) -->
+        <div class="project-card featured" data-category="data" data-aos="fade-up" data-aos-delay="150">
+          <div class="featured-badge"><i class="fas fa-star"></i> Featured</div>
+          <div class="project-header">
+            <div class="project-icon dbt-bg">
+              <i class="fas fa-project-diagram"></i>
+            </div>
+            <div class="project-category">Data Engineering</div>
+          </div>
+          <h3 class="project-title">Nexora – Data Analytics Platform</h3>
+          <p class="project-desc">A dbt-based e-commerce data analytics platform with an end-to-end transformation pipeline, including staging layer, intermediate models for order &amp; cart item aggregation, and ready-to-use marts for business reporting built on modular SQL with automatic schema validation.</p>
+          <div class="project-tech">
+            <span class="tech-badge"><i class="fas fa-layer-group"></i> dbt</span>
+            <span class="tech-badge"><i class="fas fa-database"></i> Modular SQL</span>
+            <span class="tech-badge"><i class="fas fa-chart-line"></i> Analytics Marts</span>
+            <span class="tech-badge"><i class="fas fa-shield-alt"></i> Validation</span>
+          </div>
+          <div class="project-footer">
+            <button class="btn-detail" onclick="openModal('modal_nexora')">
+              <i class="fas fa-external-link-alt"></i> View Details
+            </button>
+            <a href="https://github.com/Pxuutzzzz/NEXORA" target="_blank" class="btn-code" title="View Source on GitHub">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3: Misoa Catalog -->
+        <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-header">
+            <div class="project-icon food-bg">
+              <i class="fas fa-utensils"></i>
+            </div>
+            <div class="project-category">Web App</div>
+          </div>
+          <h3 class="project-title">Misoa Catalog</h3>
+          <p class="project-desc">Laravel-based restaurant ordering and reservation application with a multi-role system (Admin, Cashier, Customer), end-to-end order flow from cart to payment (Cash/QRIS/Transfer), real-time analytics dashboard, and sales reports with date filters.</p>
+          <div class="project-tech">
+            <span class="tech-badge"><i class="devicon-laravel-plain"></i> Laravel</span>
+            <span class="tech-badge"><i class="devicon-php-plain"></i> PHP</span>
+            <span class="tech-badge"><i class="fas fa-qrcode"></i> QRIS Payment</span>
+            <span class="tech-badge"><i class="fas fa-users-cog"></i> Multi-Role</span>
+          </div>
+          <div class="project-footer">
+            <button class="btn-detail" onclick="openModal('modal_misoa')">
+              <i class="fas fa-external-link-alt"></i> View Details
+            </button>
+            <a href="https://github.com/Pxuutzzzz/Katalog-misoa" target="_blank" class="btn-code" title="View Source on GitHub">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 4: Mental Health Risk Prediction System -->
+        <div class="project-card" data-category="ml web" data-aos="fade-up" data-aos-delay="250">
+          <div class="project-header">
+            <div class="project-icon health-bg">
+              <i class="fas fa-brain"></i>
+            </div>
+            <div class="project-category">Machine Learning</div>
+          </div>
+          <h3 class="project-title">Mental Health Risk Prediction</h3>
+          <p class="project-desc">Developing a web-based platform to predict mental health risks using the Random Forest algorithm, from preprocessing and data processing to interactive user interface implementation.</p>
+          <div class="project-tech">
+            <span class="tech-badge"><i class="fas fa-tree"></i> Random Forest</span>
+            <span class="tech-badge"><i class="devicon-python-plain"></i> Python</span>
+            <span class="tech-badge"><i class="fas fa-globe"></i> Web System</span>
+          </div>
+          <div class="project-footer">
+            <button class="btn-detail" onclick="openModal('modal9')">
+              <i class="fas fa-external-link-alt"></i> View Details
+            </button>
+            <a href="https://github.com/Pxuutzzzz/mental_health_predictor" target="_blank" class="btn-code" title="View Source on GitHub">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 5: Apache Airflow Pipeline Automation -->
+        <div class="project-card" data-category="data" data-aos="fade-up" data-aos-delay="300">
+          <div class="project-header">
+            <div class="project-icon data-bg">
+              <i class="fas fa-wind"></i>
+            </div>
+            <div class="project-category">Data Engineering</div>
+          </div>
+          <h3 class="project-title">Apache Airflow ETL Automation</h3>
+          <p class="project-desc">Design and implement an automated ETL pipeline using Apache Airflow to extract, transform, and load data from social media X as data for mental health issue analysis.</p>
+          <div class="project-tech">
+            <span class="tech-badge"><i class="fas fa-wind"></i> Apache Airflow</span>
+            <span class="tech-badge"><i class="fas fa-database"></i> ETL Pipeline</span>
+            <span class="tech-badge"><i class="fab fa-x-twitter"></i> Twitter/X API</span>
+          </div>
+          <div class="project-footer">
+            <button class="btn-detail" onclick="openModal('modal10')">
+              <i class="fas fa-external-link-alt"></i> View Details
+            </button>
+            <a href="https://github.com/Pxuutzzzz/pfs-kelompok-4" target="_blank" class="btn-code" title="View Source on GitHub">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 6: BBCA Stock SPK – XGBoost -->
+        <div class="project-card" data-category="ml" data-aos="fade-up" data-aos-delay="350">
+          <div class="project-header">
+            <div class="project-icon analytics-bg">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="project-category">Machine Learning</div>
+          </div>
+          <h3 class="project-title">BBCA Stock SPK – XGBoost</h3>
+          <p class="project-desc">A Decision Support System that predicts BBCA stock trends using XGBoost. Includes an interactive data visualization dashboard and high-accuracy financial modeling.</p>
+          <div class="project-tech">
+            <span class="tech-badge"><i class="fas fa-brain"></i> XGBoost</span>
+            <span class="tech-badge"><i class="devicon-python-plain"></i> Python</span>
+            <span class="tech-badge"><i class="fas fa-chart-pie"></i> Financial SPK</span>
+          </div>
+          <div class="project-footer">
+            <button class="btn-detail" onclick="openModal('modal8')">
+              <i class="fas fa-external-link-alt"></i> View Details
+            </button>
+            <a href="https://github.com/Pxuutzzzz/CBL-SIAB" target="_blank" class="btn-code" title="View Source on GitHub">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 7: Tracer Study & Accreditation Data Management -->
+        <div class="project-card" data-category="data other" data-aos="fade-up" data-aos-delay="400">
+          <div class="project-header">
+            <div class="project-icon excel-bg">
+              <i class="fas fa-table"></i>
+            </div>
+            <div class="project-category">Data Management</div>
+          </div>
+          <h3 class="project-title">Tracer Study &amp; Accreditation Data</h3>
+          <p class="project-desc">Involved in the implementation of the Information Technology Study Program Tracer Study. Contacted alumni, managed and summarized data via spreadsheets, ensured completeness, and prepared LAMINFOKOM documentation.</p>
+          <div class="project-tech">
+            <span class="tech-badge"><i class="fas fa-file-excel"></i> MS Excel</span>
+            <span class="tech-badge"><i class="fas fa-check-double"></i> Data Validation</span>
+            <span class="tech-badge"><i class="fas fa-file-alt"></i> LAMINFOKOM</span>
+          </div>
+          <div class="project-footer">
+            <button class="btn-detail" onclick="openModal('modal_tracer')">
+              <i class="fas fa-external-link-alt"></i> View Details
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 8: ObesitasPredict -->
+        <div class="project-card" data-category="ml" data-aos="fade-up" data-aos-delay="450">
+          <div class="project-header">
+            <div class="project-icon" style="background:rgba(147,51,234,0.12);color:#9333ea;">
+              <i class="fas fa-weight"></i>
+            </div>
+            <div class="project-category">Machine Learning</div>
+          </div>
+          <h3 class="project-title">ObesitasPredict</h3>
+          <p class="project-desc">Python/Flask-based obesity prediction application with Random Forest algorithm, including classification of 7 obesity categories, EDA analytics dashboard, and model evaluation with 80:20 data split.</p>
+          <div class="project-tech">
+            <span class="tech-badge"><i class="devicon-python-plain"></i> Python/Flask</span>
+            <span class="tech-badge"><i class="fas fa-tree"></i> Random Forest</span>
+            <span class="tech-badge"><i class="fas fa-chart-bar"></i> EDA Analytics</span>
+          </div>
+          <div class="project-footer">
+            <button class="btn-detail" onclick="openModal('modal_obesitas')">
+              <i class="fas fa-external-link-alt"></i> View Details
+            </button>
+            <a href="https://github.com/Pxuutzzzz/obesity-project" target="_blank" class="btn-code" title="View Source on GitHub">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 9: Stroke Prediction System -->
+        <div class="project-card" data-category="ml web" data-aos="fade-up" data-aos-delay="500">
+          <div class="project-header">
+            <div class="project-icon" style="background:rgba(239,68,68,0.12);color:#ef4444;">
+              <i class="fas fa-heartbeat"></i>
+            </div>
+            <div class="project-category">Health Tech ML</div>
+          </div>
+          <h3 class="project-title">Stroke Risk Prediction System</h3>
+          <p class="project-desc">Laravel and Python/Flask based application using Random Forest algorithm to predict stroke risk based on health and lifestyle data, featuring clinical risk assessment metrics.</p>
+          <div class="project-tech">
+            <span class="tech-badge"><i class="devicon-laravel-plain"></i> Laravel</span>
+            <span class="tech-badge"><i class="devicon-python-plain"></i> Python/Flask</span>
+            <span class="tech-badge"><i class="fas fa-brain"></i> Random Forest</span>
+          </div>
+          <div class="project-footer">
+            <button class="btn-detail" onclick="openModal('modal_stroke')">
+              <i class="fas fa-external-link-alt"></i> View Details
+            </button>
+            <a href="https://github.com/Pxuutzzzz/stroke-prediction" target="_blank" class="btn-code" title="View Source on GitHub">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 10: Typhoid Prediction System -->
+        <div class="project-card" data-category="ml" data-aos="fade-up" data-aos-delay="550">
+          <div class="project-header">
+            <div class="project-icon" style="background:rgba(249,115,22,0.12);color:#f97316;">
+              <i class="fas fa-stethoscope"></i>
+            </div>
+            <div class="project-category">Machine Learning</div>
+          </div>
+          <h3 class="project-title">Typhoid Prediction System</h3>
+          <p class="project-desc">Python/Streamlit based application using Random Forest algorithm to predict typhoid status based on demographic data, clinical symptoms, laboratory results, and environmental factors.</p>
+          <div class="project-tech">
+            <span class="tech-badge"><i class="devicon-python-plain"></i> Python</span>
+            <span class="tech-badge"><i class="fas fa-chart-area"></i> Streamlit</span>
+            <span class="tech-badge"><i class="fas fa-tree"></i> Random Forest</span>
+          </div>
+          <div class="project-footer">
+            <button class="btn-detail" onclick="openModal('modal_typhoid')">
+              <i class="fas fa-external-link-alt"></i> View Details
+            </button>
+            <a href="https://github.com/Pxuutzzzz/typhoid_predictor" target="_blank" class="btn-code" title="View Source on GitHub">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 11: Sentiment Analysis on IKN -->
+        <div class="project-card" data-category="ml data" data-aos="fade-up" data-aos-delay="600">
+          <div class="project-header">
+            <div class="project-icon nlp-bg">
+              <i class="fas fa-comments"></i>
+            </div>
+            <div class="project-category">NLP &amp; ML</div>
+          </div>
+          <h3 class="project-title">IKN Sentiment Analysis</h3>
+          <p class="project-desc">A Python/Streamlit based system for analyzing public sentiment regarding the development of the Indonesian National Capital (IKN) from Twitter data using Machine Learning and NLP.</p>
+          <div class="project-tech">
+            <span class="tech-badge"><i class="devicon-python-plain"></i> Python</span>
+            <span class="tech-badge"><i class="fas fa-language"></i> NLP</span>
+            <span class="tech-badge"><i class="fab fa-x-twitter"></i> Twitter/X Scraping</span>
+          </div>
+          <div class="project-footer">
+            <button class="btn-detail" onclick="openModal('modal_ikn')">
+              <i class="fas fa-external-link-alt"></i> View Details
+            </button>
+            <a href="https://github.com/Pxuutzzzz/project-sentimen-genz" target="_blank" class="btn-code" title="View Source on GitHub">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 12: HealthNav – Medical Tourism System (Gold Medal) -->
+        <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="650">
+          <div class="project-header">
+            <div class="project-icon health-bg">
+              <i class="fas fa-hospital-alt"></i>
+            </div>
+            <div class="project-category">Web App</div>
+          </div>
+          <h3 class="project-title">HealthNav – Medical Tourism</h3>
+          <p class="project-desc">Medical Tourism web application to find the nearest hospital and simplify registration for medical services. Winner of Gold Medal in KMM &amp; PKM 2024.</p>
+          <div class="project-tech">
+            <span class="tech-badge"><i class="devicon-laravel-plain"></i> Laravel</span>
+            <span class="tech-badge"><i class="fab fa-bootstrap"></i> Bootstrap</span>
+            <span class="tech-badge"><i class="fas fa-medal" style="color:#d97706;"></i> Gold Medal</span>
+          </div>
+          <div class="project-footer">
+            <button class="btn-detail" onclick="openModal('modal4')">
+              <i class="fas fa-external-link-alt"></i> View Details
+            </button>
+            <a href="https://github.com/Pxuutzzzz/HealthNav" target="_blank" class="btn-code" title="View Source on GitHub">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 13: Medical Records Management System – Laravel & Bootstrap -->
+        <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="700">
+          <div class="project-header">
+            <div class="project-icon laravel-bg">
+              <i class="devicon-laravel-plain"></i>
+            </div>
+            <div class="project-category">Web App</div>
+          </div>
+          <h3 class="project-title">Medical Records – Laravel</h3>
+          <p class="project-desc">Full-stack web application for hospital patient medical records with CRUD operations, multi-role authentication, prescription management, and reporting modules.</p>
+          <div class="project-tech">
+            <span class="tech-badge"><i class="devicon-laravel-plain"></i> Laravel</span>
+            <span class="tech-badge"><i class="devicon-php-plain"></i> PHP</span>
+            <span class="tech-badge"><i class="devicon-mysql-plain"></i> MySQL</span>
+          </div>
+          <div class="project-footer">
+            <button class="btn-detail" onclick="openModal('modal3')">
+              <i class="fas fa-external-link-alt"></i> View Details
+            </button>
+            <a href="https://github.com/Pxuutzzzz/rekam-medis-sda" target="_blank" class="btn-code" title="View Source on GitHub">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 14: Medical Records GUI – Java -->
+        <div class="project-card" data-category="other" data-aos="fade-up" data-aos-delay="750">
+          <div class="project-header">
+            <div class="project-icon java-bg">
+              <i class="devicon-java-plain"></i>
+            </div>
+            <div class="project-category">Desktop App</div>
+          </div>
+          <h3 class="project-title">Medical Records GUI – Java</h3>
+          <p class="project-desc">Java Swing/AWT desktop GUI for managing patient records, applying Object-Oriented Programming (OOP) design principles, patient intake, and diagnosis logging.</p>
+          <div class="project-tech">
+            <span class="tech-badge"><i class="devicon-java-plain"></i> Java</span>
+            <span class="tech-badge"><i class="fas fa-window-restore"></i> Swing / GUI</span>
+            <span class="tech-badge"><i class="fas fa-database"></i> OOP</span>
+          </div>
+          <div class="project-footer">
+            <button class="btn-detail" onclick="openModal('modal6')">
+              <i class="fas fa-external-link-alt"></i> View Details
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 15: Patient Finder Game -->
+        <div class="project-card" data-category="other" data-aos="fade-up" data-aos-delay="800">
+          <div class="project-header">
+            <div class="project-icon java-bg">
+              <i class="devicon-java-plain"></i>
+            </div>
+            <div class="project-category">Desktop App</div>
+          </div>
+          <h3 class="project-title">Patient Finder Game</h3>
+          <p class="project-desc">A Java-based desktop application designed to help medical staff efficiently track and locate patient data using an optimized search algorithm and grid gameplay.</p>
+          <div class="project-tech">
+            <span class="tech-badge"><i class="devicon-java-plain"></i> Java</span>
+            <span class="tech-badge"><i class="fas fa-database"></i> OOP</span>
+          </div>
+          <div class="project-footer">
+            <button class="btn-detail" onclick="openModal('modal1')">
+              <i class="fas fa-external-link-alt"></i> View Details
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 16: TIRS Wellness Tourism -->
+        <div class="project-card" data-category="other" data-aos="fade-up" data-aos-delay="850">
+          <div class="project-header">
+            <div class="project-icon" style="background:rgba(20,184,166,0.12);color:#14b8a6;">
+              <i class="fas fa-spa"></i>
+            </div>
+            <div class="project-category">Article / Research</div>
+          </div>
+          <h3 class="project-title">TIRS Wellness Tourism</h3>
+          <p class="project-desc">A wellness tourism and PKM article exploring Terapi Bunga (Flower Therapy) to promote holistic health services and nature-based eco-tourism, published on Kompasiana.</p>
+          <div class="project-tech">
+            <span class="tech-badge"><i class="fas fa-newspaper"></i> Article</span>
+            <span class="tech-badge"><i class="fas fa-seedling"></i> Wellness</span>
+            <span class="tech-badge"><i class="fas fa-flask"></i> PKM</span>
+          </div>
+          <div class="project-footer">
+            <button class="btn-detail" onclick="openModal('modal7')">
+              <i class="fas fa-external-link-alt"></i> View Details
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 17: Library Management Website (Figma) -->
+        <div class="project-card" data-category="other" data-aos="fade-up" data-aos-delay="900">
+          <div class="project-header">
+            <div class="project-icon figma-bg">
+              <i class="devicon-figma-plain"></i>
+            </div>
+            <div class="project-category">UI/UX Design</div>
+          </div>
+          <h3 class="project-title">Library Management Website</h3>
+          <p class="project-desc">A UI/UX design for a library management system created with Figma, featuring a book catalogue, search, and online borrowing interface with interactive prototyping.</p>
+          <div class="project-tech">
+            <span class="tech-badge"><i class="devicon-figma-plain"></i> Figma</span>
+            <span class="tech-badge"><i class="fas fa-palette"></i> UI/UX</span>
+          </div>
+          <div class="project-footer">
+            <button class="btn-detail" onclick="openModal('modal2')">
+              <i class="fas fa-external-link-alt"></i> View Details
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 18: Fuzzy Logic Project -->
+        <div class="project-card" data-category="ml other" data-aos="fade-up" data-aos-delay="950">
+          <div class="project-header">
+            <div class="project-icon fuzzy-bg">
+              <i class="fas fa-brain"></i>
+            </div>
+            <div class="project-category">Research</div>
+          </div>
+          <h3 class="project-title">Fuzzy Logic Project</h3>
+          <p class="project-desc">Implementation of a fuzzy logic-based system for intelligent decision-making, applied in data classification and analysis under uncertainty.</p>
+          <div class="project-tech">
+            <span class="tech-badge"><i class="fas fa-brain"></i> Fuzzy Logic</span>
+            <span class="tech-badge"><i class="fas fa-chart-bar"></i> Data Analysis</span>
+          </div>
+          <div class="project-footer">
+            <button class="btn-detail" onclick="openModal('modal5')">
+              <i class="fas fa-external-link-alt"></i> View Details
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Modals -->
+  <div class="modal-overlay" id="modal1" onclick="closeModal('modal1')">
+    <div class="modal-card modal-card-wide" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal('modal1')"><i class="fas fa-times"></i></button>
+      <div class="modal-header java-bg"><i class="devicon-java-plain"></i></div>
+      <h3>Patient Finder Game</h3>
+      <p>A Java-based desktop application helping medical staff efficiently track and locate patient data using an
+        optimized search algorithm. Built with an OOP paradigm for a clean and modular architecture.</p>
+      <div class="modal-screenshots">
+        <div class="screenshot-item">
+          <img src="Image/game1.png" alt="Patient Finder Game – Main Menu" />
+          <span class="screenshot-caption">Main Menu</span>
+        </div>
+        <div class="screenshot-item">
+          <img src="Image/game2.png" alt="Patient Finder Game – Grid Map" />
+          <span class="screenshot-caption">Grid Gameplay</span>
+        </div>
+      </div>
+      <div class="modal-tech">
+        <span class="tech-badge"><i class="devicon-java-plain"></i> Java</span>
+        <span class="tech-badge"><i class="fas fa-database"></i> OOP</span>
+        <span class="tech-badge"><i class="fas fa-search"></i> Algorithm</span>
+      </div>
+    </div>
+  </div>
+  <div class="modal-overlay" id="modal2" onclick="closeModal('modal2')">
+    <div class="modal-card modal-card-wide" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal('modal2')"><i class="fas fa-times"></i></button>
+      <div class="modal-header figma-bg"><i class="devicon-figma-plain"></i></div>
+      <h3>Library Management Website</h3>
+      <p>A UI/UX design project for a library management system, crafted in Figma. Features a clean and modern interface including a book catalogue, search functionality, and online borrowing flow with interactive prototyping.</p>
+      <div class="modal-screenshots">
+        <div class="screenshot-item screenshot-item-full">
+          <img src="Image/desain.png" alt="Library Management – Figma Design" />
+          <span class="screenshot-caption">Figma UI Design</span>
+        </div>
+      </div>
+      <div class="modal-tech">
+        <span class="tech-badge"><i class="devicon-figma-plain"></i> Figma</span>
+        <span class="tech-badge"><i class="fas fa-palette"></i> UI/UX Design</span>
+        <span class="tech-badge"><i class="fas fa-vector-square"></i> Prototyping</span>
+      </div>
+    </div>
+  </div>
+  <div class="modal-overlay" id="modal3" onclick="closeModal('modal3')">
+    <div class="modal-card modal-card-wide" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal('modal3')"><i class="fas fa-times"></i></button>
+      <div class="modal-header laravel-bg"><i class="devicon-laravel-plain"></i></div>
+      <h3>Medical Records – Laravel</h3>
+      <p>A web-based medical records system built with the Laravel framework. Covers patient data management, medical history, prescriptions, and comprehensive reports with a multi-role authentication system.</p>
+      <div class="modal-screenshots">
+        <div class="screenshot-item">
+          <img src="Image/rekamedislaravel1.jpg" alt="Medical Records Laravel – View 1" />
+          <span class="screenshot-caption">Dashboard</span>
+        </div>
+        <div class="screenshot-item">
+          <img src="Image/rekamedislaravel2.jpg" alt="Medical Records Laravel – View 2" />
+          <span class="screenshot-caption">Patient Records</span>
+        </div>
+      </div>
+      <div class="modal-tech">
+        <span class="tech-badge"><i class="devicon-laravel-plain"></i> Laravel</span>
+        <span class="tech-badge"><i class="devicon-php-plain"></i> PHP</span>
+        <span class="tech-badge"><i class="devicon-mysql-plain"></i> MySQL</span>
+        <span class="tech-badge"><i class="fab fa-bootstrap"></i> Bootstrap</span>
+      </div>
+      <div class="modal-actions">
+        <a href="https://github.com/Pxuutzzzz/rekam-medis-sda" target="_blank" class="btn-github">
+          <i class="fab fa-github"></i> View Repository on GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="modal-overlay" id="modal4" onclick="closeModal('modal4')">
+    <div class="modal-card modal-card-wide" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal('modal4')"><i class="fas fa-times"></i></button>
+      <div class="modal-header health-bg"><i class="fas fa-heartbeat"></i></div>
+      <h3>Health Navigation Website</h3>
+      <p>A digital health navigation platform that helps users find trusted medical information, nearby healthcare facilities, and easy-to-understand interactive health guides.</p>
+      <div class="modal-screenshots">
+        <div class="screenshot-item screenshot-item-full">
+          <img src="Image/heathnav.png" alt="Health Navigation Website" />
+          <span class="screenshot-caption">Web Interface</span>
+        </div>
+      </div>
+      <div class="modal-tech">
+        <span class="tech-badge"><i class="devicon-laravel-plain"></i> Laravel</span>
+        <span class="tech-badge"><i class="fab fa-bootstrap"></i> Bootstrap</span>
+        <span class="tech-badge"><i class="devicon-php-plain"></i> PHP</span>
+      </div>
+      <div class="modal-actions">
+        <a href="https://github.com/Pxuutzzzz/HealthNav" target="_blank" class="btn-github">
+          <i class="fab fa-github"></i> View Repository on GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="modal-overlay" id="modal5" onclick="closeModal('modal5')">
+    <div class="modal-card modal-card-wide" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal('modal5')"><i class="fas fa-times"></i></button>
+      <div class="modal-header fuzzy-bg"><i class="fas fa-brain"></i></div>
+      <h3>Fuzzy Logic Project</h3>
+      <p>A fuzzy logic-based system for intelligent decision-making, applied in data classification and analysis under uncertainty — suitable for decision support systems across multiple domains.</p>
+      <div class="modal-screenshots">
+        <div class="screenshot-item screenshot-item-full">
+          <img src="Image/logikafuzzy.png" alt="Fuzzy Logic Project" />
+          <span class="screenshot-caption">System Output</span>
+        </div>
+      </div>
+      <div class="modal-tech">
+        <span class="tech-badge"><i class="fas fa-brain"></i> Fuzzy Logic</span>
+        <span class="tech-badge"><i class="fas fa-chart-bar"></i> Data Analysis</span>
+        <span class="tech-badge"><i class="fas fa-cogs"></i> AI/ML Concepts</span>
+      </div>
+    </div>
+  </div>
+  <div class="modal-overlay" id="modal6" onclick="closeModal('modal6')">
+    <div class="modal-card modal-card-wide" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal('modal6')"><i class="fas fa-times"></i></button>
+      <div class="modal-header java-bg"><i class="devicon-java-plain"></i></div>
+      <h3>Medical Records GUI – Java</h3>
+      <p>A Java desktop application with a graphical user interface (GUI) for managing patient medical records. Features data input, record display, and management built using Java Swing/AWT with OOP principles.</p>
+      <div class="modal-screenshots">
+        <div class="screenshot-item">
+          <img src="Image/rekamedisgui1.png" alt="Medical Records GUI – View 1" />
+          <span class="screenshot-caption">Patient Data Form</span>
+        </div>
+        <div class="screenshot-item">
+          <img src="Image/rekamedisgui2.png" alt="Medical Records GUI – View 2" />
+          <span class="screenshot-caption">Records Management</span>
+        </div>
+      </div>
+      <div class="modal-tech">
+        <span class="tech-badge"><i class="devicon-java-plain"></i> Java</span>
+        <span class="tech-badge"><i class="fas fa-window-restore"></i> Java Swing</span>
+        <span class="tech-badge"><i class="fas fa-database"></i> OOP</span>
+      </div>
+    </div>
+  </div>
+  <div class="modal-overlay" id="modal7" onclick="closeModal('modal7')">
+    <div class="modal-card modal-card-wide" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal('modal7')"><i class="fas fa-times"></i></button>
+      <div class="modal-header" style="background:rgba(20,184,166,0.15);color:#14b8a6;"><i class="fas fa-spa"></i></div>
+      <h3>TIRS Wellness Tourism – Terapi Bunga</h3>
+      <p>A PKM article published on <strong>Kompasiana</strong> exploring a new innovation in wellness tourism through <em>Terapi Bunga</em> (Flower Therapy). The article discusses how nature-based therapy can be integrated with technology to promote holistic health and eco-tourism in Indonesia.</p>
+      <div class="modal-screenshots">
+        <div class="screenshot-item">
+          <img src="Image/wellnesstourism1.jpg" alt="TIRS Wellness Tourism 1" />
+          <span class="screenshot-caption">Wellness Tourism Concept</span>
+        </div>
+        <div class="screenshot-item">
+          <img src="Image/wellnesstourism2.png" alt="TIRS Wellness Tourism 2" />
+          <span class="screenshot-caption">Flower Therapy Program</span>
+        </div>
+      </div>
+      <div class="modal-tech">
+        <span class="tech-badge"><i class="fas fa-newspaper"></i> PKM Article</span>
+        <span class="tech-badge"><i class="fas fa-seedling"></i> Wellness Tourism</span>
+        <span class="tech-badge"><i class="fas fa-flask"></i> Research</span>
+      </div>
+      <div style="margin-top:20px;text-align:center;">
+        <a href="https://www.kompasiana.com/pandunandaprimadifanikafah7295/65abceb8c57afb0326740852/inovasi-baru-wellness-tourism-dengan-terapi-bunga-merajut-kesehatan-dan-teknologi-di-indonesia" target="_blank" class="btn btn-primary" style="display:inline-flex;align-items:center;gap:8px;font-size:0.9rem;padding:0.7rem 1.4rem;">
+          <i class="fas fa-external-link-alt"></i> Read Article on Kompasiana
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project 8 Modal -->
+  <div class="modal-overlay" id="modal8" onclick="closeModal('modal8')">
+    <div class="modal-card modal-card-wide" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal('modal8')"><i class="fas fa-times"></i></button>
+      <div class="modal-header" style="background:rgba(234,88,12,0.15);color:#ea580c;"><i class="fas fa-chart-line"></i></div>
+      <h3>Sistem Pendukung Keputusan Saham BBCA Menggunakan Algoritma XGBoost</h3>
+      <p>A Decision Support System leveraging the <strong>XGBoost algorithm</strong> to analyze and predict BBCA (Bank Central Asia) stock trends. Designed to assist in financial decision-making with high accuracy data modeling.</p>
+      <div class="modal-screenshots">
+        <div class="screenshot-item screenshot-item-full">
+          <img src="Image/spk1.png" alt="SPK BBCA View 1" />
+          <span class="screenshot-caption">System Dashboard &amp; Analysis</span>
+        </div>
+        <div class="screenshot-item">
+          <img src="Image/spk2.png" alt="SPK BBCA View 2" />
+          <span class="screenshot-caption">XGBoost Prediction Results</span>
+        </div>
+        <div class="screenshot-item">
+          <img src="Image/spk3.png" alt="SPK BBCA View 3" />
+          <span class="screenshot-caption">Data Visualization</span>
+        </div>
+      </div>
+      <div class="modal-tech">
+        <span class="tech-badge"><i class="fas fa-brain"></i> Machine Learning</span>
+        <span class="tech-badge"><i class="fas fa-code-branch"></i> XGBoost Algorithm</span>
+        <span class="tech-badge"><i class="fas fa-chart-pie"></i> Data Analysis</span>
+      </div>
+      <div class="modal-actions">
+        <a href="https://github.com/Pxuutzzzz/CBL-SIAB" target="_blank" class="btn-github">
+          <i class="fab fa-github"></i> View Repository on GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project 9 Modal -->
+  <div class="modal-overlay" id="modal9" onclick="closeModal('modal9')">
+    <div class="modal-card modal-card-wide" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal('modal9')"><i class="fas fa-times"></i></button>
+      <div class="modal-header" style="background:rgba(59,130,246,0.15);color:#3b82f6;"><i class="fas fa-heartbeat"></i></div>
+      <h3>Sistem Prediksi Risiko Kesehatan Mental Menggunakan Algoritma Random Forest Berbasis Web</h3>
+      <p>A web-based healthcare technology platform utilizing the <strong>Random Forest algorithm</strong> to predict and assess mental health risks. The system provides an accessible interface for users to evaluate their mental well-being accurately.</p>
+      <div class="modal-screenshots">
+        <div class="screenshot-item">
+          <img src="Image/mh1.png" alt="Mental Health Prediction 1" />
+          <span class="screenshot-caption">Web Interface</span>
+        </div>
+        <div class="screenshot-item">
+          <img src="Image/mh2.png" alt="Mental Health Prediction 2" />
+          <span class="screenshot-caption">Risk Assessment Tool</span>
+        </div>
+        <div class="screenshot-item">
+          <img src="Image/mh3.png" alt="Mental Health Prediction 3" />
+          <span class="screenshot-caption">Prediction Dashboard</span>
+        </div>
+        <div class="screenshot-item">
+          <img src="Image/mh4.png" alt="Mental Health Prediction 4" />
+          <span class="screenshot-caption">Result Analysis</span>
+        </div>
+      </div>
+      <div class="modal-tech">
+        <span class="tech-badge"><i class="fas fa-brain"></i> Machine Learning</span>
+        <span class="tech-badge"><i class="fas fa-tree"></i> Random Forest</span>
+        <span class="tech-badge"><i class="fas fa-laptop-medical"></i> Health Tech</span>
+      </div>
+      <div class="modal-actions">
+        <a href="https://github.com/Pxuutzzzz/mental_health_predictor" target="_blank" class="btn-github">
+          <i class="fab fa-github"></i> View Repository on GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project 10 Modal -->
+  <div class="modal-overlay" id="modal10" onclick="closeModal('modal10')">
+    <div class="modal-card modal-card-wide" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal('modal10')"><i class="fas fa-times"></i></button>
+      <div class="modal-header" style="background:rgba(16,185,129,0.15);color:#10b981;"><i class="fas fa-project-diagram"></i></div>
+      <h3>Implementation Of Apache Airflow For Pipeline Automation: Case Study Of Mental Health Issues On Social Media X</h3>
+      <p>A comprehensive <strong>Data Engineering</strong> project implementing an ETL (Extract, Transform, Load) pipeline automation using <strong>Apache Airflow</strong>. The system extracts live data from the Twitter (X) API, focusing on discussions around Mental Health issues, and processes the large-scale data for further analytics and modeling.</p>
+      <div class="modal-screenshots">
+        <div class="screenshot-item">
+          <img src="Image/etl1.png" alt="Apache Airflow Pipeline 1" />
+          <span class="screenshot-caption">Airflow DAGs &amp; Pipeline</span>
+        </div>
+        <div class="screenshot-item">
+          <img src="Image/etl2.png" alt="Apache Airflow Pipeline 2" />
+          <span class="screenshot-caption">Task Execution Logs</span>
+        </div>
+      </div>
+      <div class="modal-tech">
+        <span class="tech-badge"><i class="fas fa-wind"></i> Apache Airflow</span>
+        <span class="tech-badge"><i class="fab fa-python"></i> Python</span>
+        <span class="tech-badge"><i class="fas fa-server"></i> Data Pipeline</span>
+      </div>
+      <div class="modal-actions">
+        <a href="https://github.com/Pxuutzzzz/pfs-kelompok-4" target="_blank" class="btn-github">
+          <i class="fab fa-github"></i> View Repository on GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MBG Monitor Modal -->
+  <div class="modal-overlay" id="modal_mbg" onclick="closeModal('modal_mbg')">
+    <div class="modal-card modal-card-wide" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal('modal_mbg')"><i class="fas fa-times"></i></button>
+      <div class="modal-header vue-bg"><i class="devicon-vuejs-plain"></i></div>
+      <h3>MBG Monitor – Free Nutritional Meal Monitoring System</h3>
+      <p>A full-stack web application designed for real-time monitoring and distribution tracking of Free Nutritional Meals (MBG). Features live courier GPS tracking via WebSocket, automated nutrition menu balancing, financial transparency reporting, and an interactive public dashboard.</p>
+      <div class="modal-screenshots">
+        <div class="screenshot-item screenshot-item-full">
+          <img src="Image/mbg_monitor.jpg" alt="MBG Monitor System Dashboard" />
+          <span class="screenshot-caption">Real-Time Distribution Dashboard &amp; Courier GPS Tracking</span>
+        </div>
+      </div>
+      <div class="modal-tech">
+        <span class="tech-badge"><i class="devicon-laravel-plain"></i> Laravel</span>
+        <span class="tech-badge"><i class="devicon-vuejs-plain"></i> Vue.js</span>
+        <span class="tech-badge"><i class="fas fa-bolt"></i> WebSocket</span>
+        <span class="tech-badge"><i class="fas fa-map-marked-alt"></i> GPS Tracking</span>
+        <span class="tech-badge"><i class="devicon-mysql-plain"></i> MySQL</span>
+      </div>
+      <div class="modal-actions">
+        <a href="https://github.com/Pxuutzzzz/mbg-monitoring" target="_blank" class="btn-github">
+          <i class="fab fa-github"></i> View Repository on GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Nexora Modal -->
+  <div class="modal-overlay" id="modal_nexora" onclick="closeModal('modal_nexora')">
+    <div class="modal-card modal-card-wide" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal('modal_nexora')"><i class="fas fa-times"></i></button>
+      <div class="modal-header dbt-bg"><i class="fas fa-project-diagram"></i></div>
+      <h3>Nexora – dbt &amp; E-Commerce Data Analytics Pipeline</h3>
+      <p>An enterprise-grade dbt-based e-commerce data analytics platform with an end-to-end transformation pipeline. Includes raw source extraction, modular staging layer, intermediate models aggregating orders and cart item behavior, and production-ready analytics marts with automated schema testing and validation.</p>
+      <div class="modal-screenshots">
+        <div class="screenshot-item screenshot-item-full">
+          <img src="Image/nexora.jpg" alt="Nexora dbt Analytics Platform" />
+          <span class="screenshot-caption">dbt Lineage Graph (DAG), Schema Validation &amp; Sales KPI Marts</span>
+        </div>
+      </div>
+      <div class="modal-tech">
+        <span class="tech-badge"><i class="fas fa-layer-group"></i> dbt</span>
+        <span class="tech-badge"><i class="fas fa-database"></i> Modular SQL</span>
+        <span class="tech-badge"><i class="fas fa-shield-alt"></i> Schema Validation</span>
+        <span class="tech-badge"><i class="fas fa-chart-line"></i> Analytics Marts</span>
+      </div>
+      <div class="modal-actions">
+        <a href="https://github.com/Pxuutzzzz/NEXORA" target="_blank" class="btn-github">
+          <i class="fab fa-github"></i> View Repository on GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Misoa Catalog Modal -->
+  <div class="modal-overlay" id="modal_misoa" onclick="closeModal('modal_misoa')">
+    <div class="modal-card modal-card-wide" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal('modal_misoa')"><i class="fas fa-times"></i></button>
+      <div class="modal-header food-bg"><i class="fas fa-utensils"></i></div>
+      <h3>Misoa Catalog – Restaurant Ordering &amp; Reservation System</h3>
+      <p>A comprehensive Laravel-based restaurant management and ordering application featuring a multi-role hierarchy (Admin, Cashier, Customer). Supports end-to-end ordering flow from cart to payment (Cash, QRIS, Bank Transfer), interactive table reservations, real-time analytics dashboard, and revenue reports with customizable date filters.</p>
+      <div class="modal-screenshots">
+        <div class="screenshot-item screenshot-item-full">
+          <img src="Image/misoa_catalog.jpg" alt="Misoa Catalog Web Interface" />
+          <span class="screenshot-caption">Menu Catalog, QRIS Checkout &amp; Sales Analytics Dashboard</span>
+        </div>
+      </div>
+      <div class="modal-tech">
+        <span class="tech-badge"><i class="devicon-laravel-plain"></i> Laravel</span>
+        <span class="tech-badge"><i class="devicon-php-plain"></i> PHP</span>
+        <span class="tech-badge"><i class="fas fa-qrcode"></i> QRIS</span>
+        <span class="tech-badge"><i class="fas fa-users-cog"></i> Multi-Role</span>
+        <span class="tech-badge"><i class="devicon-mysql-plain"></i> MySQL</span>
+      </div>
+      <div class="modal-actions">
+        <a href="https://github.com/Pxuutzzzz/Katalog-misoa" target="_blank" class="btn-github">
+          <i class="fab fa-github"></i> View Repository on GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tracer Study Modal -->
+  <div class="modal-overlay" id="modal_tracer" onclick="closeModal('modal_tracer')">
+    <div class="modal-card modal-card-wide" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal('modal_tracer')"><i class="fas fa-times"></i></button>
+      <div class="modal-header excel-bg"><i class="fas fa-table"></i></div>
+      <h3>Tracer Study &amp; Accreditation Data Management System</h3>
+      <p>Comprehensive data management and validation for the Information Technology Study Program at Universitas 'Aisyiyah Yogyakarta. Encompassed questionnaire follow-up workflows with alumni, large-scale spreadsheet consolidation, data auditing, response rate monitoring, and document preparation for LAMINFOKOM and GA Accreditation.</p>
+      <div class="modal-screenshots">
+        <div class="screenshot-item screenshot-item-full">
+          <img src="Image/tracer_study.jpg" alt="Tracer Study Dashboard" />
+          <span class="screenshot-caption">Alumni Response Rate Analytics &amp; Accreditation Checklist</span>
+        </div>
+      </div>
+      <div class="modal-tech">
+        <span class="tech-badge"><i class="fas fa-file-excel"></i> MS Excel</span>
+        <span class="tech-badge"><i class="fas fa-check-double"></i> Data Validation</span>
+        <span class="tech-badge"><i class="fas fa-file-contract"></i> LAMINFOKOM</span>
+        <span class="tech-badge"><i class="fas fa-chart-pie"></i> Response Analytics</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ObesitasPredict Modal -->
+  <div class="modal-overlay" id="modal_obesitas" onclick="closeModal('modal_obesitas')">
+    <div class="modal-card modal-card-wide" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal('modal_obesitas')"><i class="fas fa-times"></i></button>
+      <div class="modal-header" style="background:rgba(147,51,234,0.15);color:#9333ea;"><i class="fas fa-weight"></i></div>
+      <h3>ObesitasPredict – Obesity Level Classification System</h3>
+      <p>Python/Flask-based machine learning application utilizing the Random Forest algorithm to predict and classify 7 distinct obesity categories based on clinical and lifestyle data. Includes an interactive Exploratory Data Analysis (EDA) dashboard, correlation matrix heatmap, feature importance analysis, and model evaluation with an 80:20 data split.</p>
+      <div class="modal-screenshots">
+        <div class="screenshot-item screenshot-item-full">
+          <img src="Image/obesitas.jpg" alt="ObesitasPredict Dashboard" />
+          <span class="screenshot-caption">Prediction Gauge, EDA Analytics &amp; Feature Importance Heatmap</span>
+        </div>
+      </div>
+      <div class="modal-tech">
+        <span class="tech-badge"><i class="devicon-python-plain"></i> Python/Flask</span>
+        <span class="tech-badge"><i class="fas fa-tree"></i> Random Forest</span>
+        <span class="tech-badge"><i class="fas fa-chart-bar"></i> EDA Insights</span>
+        <span class="tech-badge"><i class="fas fa-stethoscope"></i> Health Tech</span>
+      </div>
+      <div class="modal-actions">
+        <a href="https://github.com/Pxuutzzzz/obesity-project" target="_blank" class="btn-github">
+          <i class="fab fa-github"></i> View Repository on GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stroke Prediction Modal -->
+  <div class="modal-overlay" id="modal_stroke" onclick="closeModal('modal_stroke')">
+    <div class="modal-card modal-card-wide" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal('modal_stroke')"><i class="fas fa-times"></i></button>
+      <div class="modal-header" style="background:rgba(239,68,68,0.15);color:#ef4444;"><i class="fas fa-heartbeat"></i></div>
+      <h3>Stroke Risk Prediction System</h3>
+      <p>Full-stack healthcare technology application built on Laravel and Python/Flask using the Random Forest algorithm to evaluate and predict patient stroke risk based on health indicators (hypertension, heart rate, BMI, glucose, lifestyle factors). Features real-time risk assessment radial gauges and clinical prevention advice.</p>
+      <div class="modal-screenshots">
+        <div class="screenshot-item screenshot-item-full">
+          <img src="Image/stroke_preview.jpg" alt="Stroke Risk Prediction Dashboard" />
+          <span class="screenshot-caption">Stroke Risk Assessment Radial Gauge &amp; Clinical Indicators</span>
+        </div>
+      </div>
+      <div class="modal-tech">
+        <span class="tech-badge"><i class="devicon-laravel-plain"></i> Laravel</span>
+        <span class="tech-badge"><i class="devicon-python-plain"></i> Python/Flask</span>
+        <span class="tech-badge"><i class="fas fa-brain"></i> Random Forest</span>
+        <span class="tech-badge"><i class="fas fa-laptop-medical"></i> Health Tech</span>
+      </div>
+      <div class="modal-actions">
+        <a href="https://github.com/Pxuutzzzz/stroke-prediction" target="_blank" class="btn-github">
+          <i class="fab fa-github"></i> View Repository on GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Typhoid Prediction Modal -->
+  <div class="modal-overlay" id="modal_typhoid" onclick="closeModal('modal_typhoid')">
+    <div class="modal-card modal-card-wide" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal('modal_typhoid')"><i class="fas fa-times"></i></button>
+      <div class="modal-header" style="background:rgba(249,115,22,0.15);color:#f97316;"><i class="fas fa-stethoscope"></i></div>
+      <h3>Typhoid Prediction System – Clinical Status Diagnosis</h3>
+      <p>Python and Streamlit based diagnostic decision support system using the Random Forest machine learning algorithm. Accurately determines typhoid infection status based on demographic profiles, clinical symptoms (fever curves, abdominal pain), laboratory examination results, and sanitation factors.</p>
+      <div class="modal-screenshots">
+        <div class="screenshot-item screenshot-item-full">
+          <img src="Image/stroke_preview.jpg" alt="Typhoid Prediction Interface" />
+          <span class="screenshot-caption">Clinical Feature Analysis &amp; Diagnostic Confidence Metrics</span>
+        </div>
+      </div>
+      <div class="modal-tech">
+        <span class="tech-badge"><i class="devicon-python-plain"></i> Python</span>
+        <span class="tech-badge"><i class="fas fa-chart-area"></i> Streamlit</span>
+        <span class="tech-badge"><i class="fas fa-tree"></i> Random Forest</span>
+        <span class="tech-badge"><i class="fas fa-vial"></i> Clinical ML</span>
+      </div>
+      <div class="modal-actions">
+        <a href="https://github.com/Pxuutzzzz/typhoid_predictor" target="_blank" class="btn-github">
+          <i class="fab fa-github"></i> View Repository on GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- IKN Sentiment Analysis Modal -->
+  <div class="modal-overlay" id="modal_ikn" onclick="closeModal('modal_ikn')">
+    <div class="modal-card modal-card-wide" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal('modal_ikn')"><i class="fas fa-times"></i></button>
+      <div class="modal-header nlp-bg"><i class="fas fa-comments"></i></div>
+      <h3>Public Sentiment Analysis on the Development of Indonesian National Capital (IKN)</h3>
+      <p>A Python and Streamlit natural language processing (NLP) application analyzing nationwide public opinion on the development of Ibu Kota Nusantara (IKN) extracted from Twitter (X) data. Features automated sentiment polarity classification (Positive, Neutral, Negative), Indonesian tokenized word clouds, and temporal sentiment trend visualization.</p>
+      <div class="modal-screenshots">
+        <div class="screenshot-item screenshot-item-full">
+          <img src="Image/ikn_sentiment.jpg" alt="IKN Sentiment Analysis Dashboard" />
+          <span class="screenshot-caption">Sentiment Distribution Donut Chart, Trend Timeline &amp; Indonesian Word Cloud</span>
+        </div>
+      </div>
+      <div class="modal-tech">
+        <span class="tech-badge"><i class="devicon-python-plain"></i> Python</span>
+        <span class="tech-badge"><i class="fas fa-language"></i> NLP</span>
+        <span class="tech-badge"><i class="fab fa-x-twitter"></i> Twitter/X Scraping</span>
+        <span class="tech-badge"><i class="fas fa-chart-pie"></i> Streamlit</span>
+      </div>
+      <div class="modal-actions">
+        <a href="https://github.com/Pxuutzzzz/project-sentimen-genz" target="_blank" class="btn-github">
+          <i class="fab fa-github"></i> View Repository on GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== EXPERIENCE SECTION ===== -->
+  <section class="experience" id="experience">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Experience</span>
+        <h2 class="section-title">Organizations &amp; Activities</h2>
+      </div>
+      <div class="timeline">
+
+        <!-- 1. Surveyor Tracer Study & Tim Akreditasi (2026) -->
+        <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
+          <div class="timeline-icon" style="background:linear-gradient(135deg,#6366f1,#8b5cf6);color:#fff;border:none;">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-period"><i class="fas fa-calendar-alt"></i> 2026</div>
+            <h3 class="timeline-title">Surveyor Tracer Study &amp; Accreditation Team</h3>
+            <p class="timeline-subtitle">Program Studi Teknologi Informasi – Universitas 'Aisyiyah Yogyakarta</p>
+            <ul class="timeline-desc" style="padding-left:1.2rem;margin:0 0 12px 0;">
+              <li>Collect data and contact alumni of the Information Technology Study Program to complete the Tracer Study questionnaire.</li>
+              <li>Communicate and follow up with alumni regarding questionnaire completion.</li>
+              <li>Manage, summarize, and monitor Tracer Study data using Microsoft Excel.</li>
+              <li>Check and validate data to ensure completeness and accuracy of information.</li>
+              <li>Archive and manage supporting documents for the Tracer Study and accreditation.</li>
+              <li>Involved in data and document preparation for LAMINFOKOM accreditation and GA Accreditation of the Information Technology Study Program.</li>
+              <li>Coordinate with the team in collecting, checking, and compiling data and documents.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag"><i class="fas fa-search"></i> Tracer Study</span>
+              <span class="tag"><i class="fas fa-file-alt"></i> Akreditasi</span>
+              <span class="tag"><i class="fas fa-table"></i> Microsoft Excel</span>
+              <span class="tag"><i class="fas fa-check-double"></i> Data Validation</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Juara I APSI-PTMA (2026) -->
+        <div class="timeline-item timeline-item-right" data-aos="fade-left" data-aos-delay="150">
+          <div class="timeline-icon" style="background:linear-gradient(135deg,#f59e0b,#fbbf24);color:#fff;border:none;">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-period"><i class="fas fa-calendar-alt"></i> 2026</div>
+            <h3 class="timeline-title">First Place – APSI-PTMA Scientific Writing Competition</h3>
+            <p class="timeline-subtitle">Musyawarah Nasional APSI-PTMA 2026</p>
+            <p class="timeline-desc">Awarded <strong>1st Place (Juara I)</strong> in the National Scientific Writing Competition (Lomba Karya Tulis Ilmiah) at the APSI-PTMA National Conference 2026.</p>
+            <div class="timeline-tags">
+              <span class="tag" style="background:rgba(251,191,36,0.15);color:#d97706;"><i class="fas fa-trophy"></i> Juara I</span>
+              <span class="tag"><i class="fas fa-pen-nib"></i> Scientific Writing</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Full Stack Developer Internship – RS Queen Latifah (Oct 2024 - Jan 2025) -->
+        <div class="timeline-item" data-aos="fade-right" data-aos-delay="200">
+          <div class="timeline-icon">
+            <i class="fas fa-hospital"></i>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-period"><i class="fas fa-calendar-alt"></i> Oct 2024 – Jan 2025</div>
+            <h3 class="timeline-title">Full Stack Developer Internship – IT Team</h3>
+            <p class="timeline-subtitle">Queen Latifah Hospital Yogyakarta</p>
+            <ul class="timeline-desc" style="padding-left:1.2rem;margin:0 0 12px 0;">
+              <li>Developed and maintained an internal web system to support hospital operations and patient data management.</li>
+              <li>Contributed to the digitalization of healthcare workflows using Laravel and MySQL.</li>
+              <li>Conducted quality assurance (QA) testing and data input into the medical information system.</li>
+              <li>Coordinated with the cross-functional team in the development and maintenance of the hospital information system.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag"><i class="devicon-laravel-plain"></i> Laravel</span>
+              <span class="tag"><i class="devicon-mysql-plain"></i> MySQL</span>
+              <span class="tag"><i class="fas fa-check-double"></i> QA Testing</span>
+              <span class="tag"><i class="fas fa-heartbeat"></i> Health Tech</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Excess 2025 Essay Competition -->
+        <div class="timeline-item timeline-item-right" data-aos="fade-left" data-aos-delay="250">
+          <div class="timeline-icon">
+            <i class="fas fa-globe"></i>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-period"><i class="fas fa-calendar-alt"></i> 2025</div>
+            <h3 class="timeline-title">Participant – Excess 2025</h3>
+            <p class="timeline-subtitle">International Essay Competition</p>
+            <p class="timeline-desc">Participated as a delegate in the Excess 2025 international-level essay competition, demonstrating critical analytical thinking, research, and global technological perspectives.</p>
+            <div class="timeline-tags">
+              <span class="tag"><i class="fas fa-pen"></i> Essay</span>
+              <span class="tag"><i class="fas fa-globe-americas"></i> International</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Gold Medalist – KMM & PKM 2024 -->
+        <div class="timeline-item" data-aos="fade-right" data-aos-delay="300">
+          <div class="timeline-icon" style="background:#fbbf24;color:#fff;border:none;">
+            <i class="fas fa-medal"></i>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-period"><i class="fas fa-calendar-alt"></i> 9 October 2024</div>
+            <h3 class="timeline-title">Gold Medal – KMM &amp; PKM 2024</h3>
+            <p class="timeline-subtitle">Software Application Development Category</p>
+            <p class="timeline-desc">Awarded the <strong>Gold Medal</strong> for the project titled <em>"Sistem Informasi Kesehatan Pengembangan Perangkat Lunak Medical Tourism Berbasis Aplikasi Android di Purwokerto"</em>.</p>
+            <div class="timeline-tags">
+              <span class="tag" style="background:rgba(251,191,36,0.15);color:#d97706;"><i class="fas fa-star"></i> Gold Medal</span>
+              <span class="tag"><i class="fab fa-android"></i> Android / HealthNav</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. GEMASTIK 2024 -->
+        <div class="timeline-item timeline-item-right" data-aos="fade-left" data-aos-delay="350">
+          <div class="timeline-icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-period"><i class="fas fa-calendar-alt"></i> 2024</div>
+            <h3 class="timeline-title">Participant – GEMASTIK 2024</h3>
+            <p class="timeline-subtitle">National Student Exhibition in ICT (Competitive Programming)</p>
+            <p class="timeline-desc">Competed as a contestant in the National Student Exhibition in Information and Communication Technology (GEMASTIK XVII 2024) in the competitive programming division.</p>
+            <div class="timeline-tags">
+              <span class="tag"><i class="fas fa-laptop-code"></i> Competitive Programming</span>
+              <span class="tag"><i class="fas fa-trophy"></i> GEMASTIK</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. GEMASTIK 2023 -->
+        <div class="timeline-item" data-aos="fade-right" data-aos-delay="400">
+          <div class="timeline-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-period"><i class="fas fa-calendar-alt"></i> 16 July 2023</div>
+            <h3 class="timeline-title">Programming Team – GEMASTIK 2023</h3>
+            <p class="timeline-subtitle">National Student Exhibition in ICT</p>
+            <p class="timeline-desc">Participated as a key member in the competitive programming division, applying advanced algorithmic techniques and C++ to solve complex computational challenges.</p>
+            <div class="timeline-tags">
+              <span class="tag"><i class="fas fa-code"></i> C++</span>
+              <span class="tag"><i class="fas fa-trophy"></i> National ICT</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. HIMA ITECH (2022 - 2024) -->
+        <div class="timeline-item timeline-item-right" data-aos="fade-left" data-aos-delay="450">
+          <div class="timeline-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-period"><i class="fas fa-calendar-alt"></i> 2022 – 2024</div>
+            <h3 class="timeline-title">HIMA ITECH</h3>
+            <p class="timeline-subtitle">Information Technology Student Association – Universitas 'Aisyiyah Yogyakarta</p>
+            <p class="timeline-desc">Active organizer in the Information Technology Student Association (HIMA ITECH), coordinating tech workshops, campus seminars, academic mentorship, and student development programs.</p>
+            <div class="timeline-tags">
+              <span class="tag"><i class="fas fa-code"></i> Technology</span>
+              <span class="tag"><i class="fas fa-users"></i> Student Association</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9. Campus Committee (2022 - 2026) -->
+        <div class="timeline-item" data-aos="fade-right" data-aos-delay="500">
+          <div class="timeline-icon">
+            <i class="fas fa-calendar-check"></i>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-period"><i class="fas fa-calendar-alt"></i> 2022 – 2026</div>
+            <h3 class="timeline-title">Campus Committees &amp; Event Management</h3>
+            <p class="timeline-subtitle">Universitas 'Aisyiyah Yogyakarta</p>
+            <p class="timeline-desc">Actively involved in various campus event committees, from tech seminars and academic symposiums to university-wide orientations, honing organizational and event leadership skills.</p>
+            <div class="timeline-tags">
+              <span class="tag"><i class="fas fa-tasks"></i> Coordination</span>
+              <span class="tag"><i class="fas fa-clipboard-check"></i> Event Management</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10. OSIS & PMR (2019 - 2022) -->
+        <div class="timeline-item timeline-item-right" data-aos="fade-left" data-aos-delay="550">
+          <div class="timeline-icon">
+            <i class="fas fa-school"></i>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-period"><i class="fas fa-calendar-alt"></i> 2019 – 2022</div>
+            <h3 class="timeline-title">OSIS &amp; PMR</h3>
+            <p class="timeline-subtitle">SMA Negeri 1 Bukit Kemuning</p>
+            <p class="timeline-desc">Active member in the Student Council (OSIS) and Youth Red Cross (PMR), building fundamental leadership, social accountability, emergency first-aid response, and effective teamwork.</p>
+            <div class="timeline-tags">
+              <span class="tag"><i class="fas fa-star"></i> Leadership</span>
+              <span class="tag"><i class="fas fa-heart"></i> Social Service</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Contact Me</h2>
+        <p class="section-subtitle">Have a question or want to collaborate? Feel free to reach out!</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info" data-aos="fade-right" data-aos-duration="800">
+          <div class="contact-card">
+            <div class="contact-item">
+              <div class="contact-icon email-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-detail">
+                <span class="contact-label">Email</span>
+                <a href="mailto:putriindah2343@gmail.com" class="contact-value">putriindah2343@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon linkedin-icon">
+                <i class="fab fa-linkedin"></i>
+              </div>
+              <div class="contact-detail">
+                <span class="contact-label">LinkedIn</span>
+                <a href="https://www.linkedin.com/in/putri-indah-cahyani-85b181322/" target="_blank"
+                  class="contact-value">Putri Indah Cahyani</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon" style="background:rgba(0,0,0,0.08);color:#000;">
+                <i class="fab fa-x-twitter"></i>
+              </div>
+              <div class="contact-detail">
+                <span class="contact-label">X (Twitter)</span>
+                <a href="https://x.com/pxuutzz" target="_blank" class="contact-value">@pxuutzz</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="https://github.com/Pxuutzzzz" target="_blank" class="social-btn github">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/putri-indah-cahyani-85b181322/" target="_blank"
+              class="social-btn linkedin">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/putriindahchyni_/" target="_blank" class="social-btn instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://x.com/pxuutzz" target="_blank" class="social-btn" style="background:#000;">
+              <i class="fab fa-x-twitter"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap" data-aos="fade-left" data-aos-duration="800">
+          <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
+            <div class="form-group">
+              <label for="name"><i class="fas fa-user"></i> Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+            </div>
+            <div class="form-group">
+              <label for="email"><i class="fas fa-envelope"></i> Email</label>
+              <input type="email" id="email" name="email" placeholder="email@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="subject"><i class="fas fa-tag"></i> Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Topic of your message" required />
+            </div>
+            <div class="form-group">
+              <label for="message"><i class="fas fa-comment"></i> Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Write your message here..."
+                required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+              <i class="fas fa-paper-plane"></i>
+              Send Message
+            </button>
+            <div class="form-success" id="formSuccess">
+              <i class="fas fa-check-circle"></i>
+              Message sent successfully! Thank you 🌸
+            </div>
+            <div class="form-error" id="formError">
+              <i class="fas fa-exclamation-circle"></i>
+              <span>Tidak dapat mengirim pesan otomatis.</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="logo-text">Putri<span class="logo-accent">.</span></span>
+          <p>Passionate in Technology, Innovation, and Problem Solving</p>
+          <div class="footer-socials">
+            <a href="https://github.com/Pxuutzzzz" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/putri-indah-cahyani-85b181322/" target="_blank"
+              aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/putriindahchyni_/" target="_blank" aria-label="Instagram"><i
+                class="fab fa-instagram"></i></a>
+            <a href="https://x.com/pxuutzz" target="_blank" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Core Skills</h4>
+          <ul>
+            <li><a href="#skills">Laravel &amp; PHP</a></li>
+            <li><a href="#skills">Python &amp; Machine Learning</a></li>
+            <li><a href="#skills">Apache Airflow &amp; dbt</a></li>
+            <li><a href="#skills">MySQL &amp; PostgreSQL</a></li>
+            <li><a href="#skills">Data Validation &amp; QA</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Putri Indah Cahyani. All rights reserved. Fresh Graduate in Information Technology.</p>
+        <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top">
+          <i class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- AOS Library -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="/script.js"></script>
+</body>
+
 </html>
