@@ -676,7 +676,7 @@ section { padding: 100px 0; }
 }
 
 .id-status {
-  color: #16a34a;
+  color: #d97706;
   font-weight: 600;
   display: flex;
   align-items: center;
@@ -690,6 +690,12 @@ section { padding: 100px 0; }
   background: #22c55e;
   box-shadow: 0 0 6px #22c55e;
   animation: pulseGreen 1.5s infinite;
+}
+
+.pulse-dot.graduated {
+  background: #d97706;
+  box-shadow: 0 0 6px #d97706;
+  animation: none;
 }
 
 @keyframes pulseGreen {
