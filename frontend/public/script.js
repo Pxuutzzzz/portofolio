@@ -59,6 +59,62 @@ function updateDarkModeIcon(theme) {
   darkModeIcon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
 }
 
+// ===== LANGUAGE SWITCHER (EN / ID) =====
+const langToggle = document.getElementById('langToggle');
+const savedLang = localStorage.getItem('portfolio_lang') || 'en';
+
+function setLanguage(lang) {
+  document.documentElement.setAttribute('lang', lang);
+  localStorage.setItem('portfolio_lang', lang);
+
+  const optId = document.querySelector('.lang-opt[data-lang="id"]');
+  const optEn = document.querySelector('.lang-opt[data-lang="en"]');
+  if (optId && optEn) {
+    if (lang === 'id') {
+      optId.classList.add('active');
+      optEn.classList.remove('active');
+    } else {
+      optEn.classList.add('active');
+      optId.classList.remove('active');
+    }
+  }
+
+  if (typeof translations === 'undefined' || !translations[lang]) return;
+
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    const val = getNestedTranslation(translations[lang], key);
+    if (val !== undefined) {
+      el.innerHTML = val;
+    }
+  });
+
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+    const key = el.getAttribute('data-i18n-placeholder');
+    const val = getNestedTranslation(translations[lang], key);
+    if (val !== undefined) {
+      el.setAttribute('placeholder', val);
+    }
+  });
+
+  // Update tagline with current language
+  if (translations[lang].hero && translations[lang].hero.tagline) {
+    runTypingAnimation(translations[lang].hero.tagline);
+  }
+}
+
+if (langToggle) {
+  langToggle.addEventListener('click', (e) => {
+    const targetOpt = e.target.closest('.lang-opt');
+    const currentLang = localStorage.getItem('portfolio_lang') || 'en';
+    let nextLang = currentLang === 'en' ? 'id' : 'en';
+    if (targetOpt && targetOpt.getAttribute('data-lang')) {
+      nextLang = targetOpt.getAttribute('data-lang');
+    }
+    setLanguage(nextLang);
+  });
+}
+
 // ===== PROFILE IMAGE ERROR HANDLING =====
 function handleImageError(imgId, placeholderId) {
   const img = document.getElementById(imgId);
@@ -125,9 +181,13 @@ async function handleSubmit(e) {
   if (success) success.classList.remove('show');
   if (error) error.classList.remove('show');
 
+  // Localized strings
+  const currentLang = localStorage.getItem('portfolio_lang') || 'en';
+  const cLang = (typeof translations !== 'undefined' && translations[currentLang]) ? translations[currentLang].contact : null;
+
   // Loading state
-  const originalBtnContent = '<i class="fas fa-paper-plane"></i> Send Message';
-  btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Mengirim Pesan...';
+  const originalBtnContent = cLang ? cLang.btn_send : '<i class="fas fa-paper-plane"></i> Send Message';
+  btn.innerHTML = cLang ? cLang.btn_sending : '<i class="fas fa-spinner fa-spin"></i> Sending Message...';
   btn.disabled = true;
 
   try {
@@ -150,10 +210,10 @@ async function handleSubmit(e) {
     const data = await response.json();
 
     if (response.ok && (data.success === "true" || data.success === true || response.status === 200)) {
-      btn.innerHTML = '<i class="fas fa-check"></i> Pesan Terkirim!';
+      btn.innerHTML = cLang ? cLang.btn_sent : '<i class="fas fa-check"></i> Pesan Terkirim!';
       btn.style.background = 'linear-gradient(135deg, #22c55e, #16a34a)';
       if (success) {
-        success.innerHTML = '<i class="fas fa-check-circle"></i> Pesan berhasil dikirim ke <strong>putriindah2343@gmail.com</strong>! Terima kasih 🌸';
+        success.innerHTML = cLang ? cLang.msg_success : '<i class="fas fa-check-circle"></i> Pesan berhasil dikirim ke <strong>putriindah2343@gmail.com</strong>! Terima kasih 🌸';
         success.classList.add('show');
       }
       form.reset();
@@ -175,7 +235,11 @@ async function handleSubmit(e) {
     const mailtoUrl = `mailto:putriindah2343@gmail.com?subject=${encodeURIComponent('[Portfolio Contact] ' + (subject || 'Pesan Baru'))}&body=${encodeURIComponent('Nama: ' + name + '\nEmail: ' + email + '\n\nPesan:\n' + message)}`;
 
     if (error) {
-      error.innerHTML = `<i class="fas fa-exclamation-triangle"></i> Terkendala jaringan. <a href="${mailtoUrl}" target="_blank">Klik di sini untuk langsung kirim via Email App / Gmail</a>`;
+      if (cLang && cLang.msg_error) {
+        error.innerHTML = cLang.msg_error.replace('{mailtoUrl}', mailtoUrl);
+      } else {
+        error.innerHTML = `<i class="fas fa-exclamation-triangle"></i> Terkendala jaringan. <a href="${mailtoUrl}" target="_blank">Klik di sini untuk langsung kirim via Email App / Gmail</a>`;
+      }
       error.classList.add('show');
     }
   }
@@ -207,19 +271,28 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // ===== TYPING ANIMATION for hero tagline =====
 const tagline = document.querySelector('.hero-tagline');
-if (tagline) {
-  const text = tagline.textContent;
+let typingTimeout = null;
+
+function runTypingAnimation(targetText) {
+  if (!tagline) return;
+  if (typingTimeout) clearTimeout(typingTimeout);
+  const text = targetText || (typeof translations !== 'undefined' && translations[savedLang] && translations[savedLang].hero.tagline) || tagline.textContent;
   tagline.textContent = '';
   let i = 0;
   function typeWriter() {
     if (i < text.length) {
       tagline.textContent += text.charAt(i);
       i++;
-      setTimeout(typeWriter, 35);
+      typingTimeout = setTimeout(typeWriter, 35);
     }
   }
-  setTimeout(typeWriter, 1200);
+  typingTimeout = setTimeout(typeWriter, 400);
 }
+
+// Initial language setup on DOM load
+document.addEventListener('DOMContentLoaded', () => {
+  setLanguage(savedLang);
+});
 
 // ===== COUNTER ANIMATION for stats =====
 function animateCounter(el, target, suffix = '') {
