@@ -35,16 +35,21 @@
         <span class="logo-text">Putri<span class="logo-accent">.</span></span>
       </a>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#home" class="nav-link active">Home</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#education" class="nav-link">Education</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#certifications" class="nav-link">Certifications</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#experience" class="nav-link">Experience</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#home" class="nav-link active" data-i18n="nav.home">Home</a></li>
+        <li><a href="#about" class="nav-link" data-i18n="nav.about">About</a></li>
+        <li><a href="#education" class="nav-link" data-i18n="nav.education">Education</a></li>
+        <li><a href="#skills" class="nav-link" data-i18n="nav.skills">Skills</a></li>
+        <li><a href="#certifications" class="nav-link" data-i18n="nav.certifications">Certifications</a></li>
+        <li><a href="#projects" class="nav-link" data-i18n="nav.projects">Projects</a></li>
+        <li><a href="#experience" class="nav-link" data-i18n="nav.experience">Experience</a></li>
+        <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
       </ul>
       <div class="nav-actions">
+        <button class="lang-toggle-btn" id="langToggle" aria-label="Ganti Bahasa / Switch Language" title="Ganti Bahasa (ID / EN)">
+          <span class="lang-opt" data-lang="id">ID</span>
+          <span class="lang-divider">/</span>
+          <span class="lang-opt active" data-lang="en">EN</span>
+        </button>
         <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle dark mode">
           <i class="fas fa-moon" id="darkModeIcon"></i>
         </button>
@@ -64,30 +69,30 @@
     </div>
     <div class="hero-container">
       <div class="hero-content" data-aos="fade-right" data-aos-duration="900">
-        <div class="hero-badge">
+        <div class="hero-badge" data-i18n="hero.badge">
           <i class="fas fa-sparkles"></i>
           <span>Fresh Graduate · Available for Opportunities</span>
         </div>
-        <h1 class="hero-name">
+        <h1 class="hero-name" data-i18n="hero.greeting">
           Hi, I'm <span class="name-highlight">Putri Indah</span><br />Cahyani <span class="wave">👋</span>
         </h1>
-        <p class="hero-status">
+        <p class="hero-status" data-i18n="hero.status">
           <i class="fas fa-user-graduate"></i>
           Fresh Graduate in Information Technology
         </p>
-        <p class="hero-tagline">
+        <p class="hero-tagline" data-i18n="hero.tagline">
           "Information Technology Graduate passionate about Web Development, Machine Learning, Data Engineering, and Data Processing"
         </p>
         <div class="hero-buttons">
-          <a href="#projects" class="btn btn-primary">
+          <a href="#projects" class="btn btn-primary" data-i18n="hero.btn_portfolio">
             <i class="fas fa-eye"></i>
             View Portfolio
           </a>
-          <a href="#contact" class="btn btn-secondary">
+          <a href="#contact" class="btn btn-secondary" data-i18n="hero.btn_contact">
             <i class="fas fa-paper-plane"></i>
             Contact Me
           </a>
-          <a href="mailto:putriindah2343@gmail.com" class="btn btn-outline">
+          <a href="mailto:putriindah2343@gmail.com" class="btn btn-outline" data-i18n="hero.btn_hire">
             <i class="fas fa-envelope"></i>
             Hire Me
           </a>
@@ -95,17 +100,17 @@
         <div class="hero-stats">
           <div class="stat">
             <span class="stat-number">3.80</span>
-            <span class="stat-label">GPA / 4.00</span>
+            <span class="stat-label" data-i18n="hero.stat_gpa">GPA / 4.00</span>
           </div>
           <div class="stat-divider"></div>
           <div class="stat">
             <span class="stat-number">15+</span>
-            <span class="stat-label">Tech Skills</span>
+            <span class="stat-label" data-i18n="hero.stat_skills">Tech Skills</span>
           </div>
           <div class="stat-divider"></div>
           <div class="stat">
             <span class="stat-number">14+</span>
-            <span class="stat-label">Projects</span>
+            <span class="stat-label" data-i18n="hero.stat_projects">Projects</span>
           </div>
         </div>
       </div>
@@ -140,7 +145,7 @@
             <div class="id-card-photo-hero">
               <img src="Image/profile1.png" alt="Putri Indah Cahyani" class="id-full-photo" id="profileImg" />
               <div class="id-photo-overlay"></div>
-              <div class="id-verified-chip">
+              <div class="id-verified-chip" data-i18n="hero.card_verified">
                 <i class="fas fa-check-circle"></i> VERIFIED
               </div>
             </div>
@@ -148,10 +153,10 @@
             <!-- Bottom Essential Info Section -->
             <div class="id-card-info">
               <h3 class="id-name">Putri Indah Cahyani</h3>
-              <p class="id-role">S1 Information Technology</p>
+              <p class="id-role" data-i18n="hero.card_role">S1 Information Technology</p>
               <div class="id-meta-row">
                 <span class="id-number"><i class="fas fa-id-badge"></i> ID: 2211501021</span>
-                <span class="id-status"><span class="pulse-dot graduated"></span> Graduated</span>
+                <span class="id-status" data-i18n="hero.card_status"><span class="pulse-dot graduated"></span> Graduated</span>
               </div>
             </div>
 
@@ -169,7 +174,7 @@
       </div>
     </div>
     <div class="scroll-indicator">
-      <span>Scroll</span>
+      <span data-i18n="hero.scroll">Scroll</span>
       <div class="scroll-line"></div>
     </div>
   </section>
@@ -178,8 +183,8 @@
   <section class="about" id="about">
     <div class="container">
       <div class="section-header" data-aos="fade-up">
-        <span class="section-tag">About Me</span>
-        <h2 class="section-title">Get to Know Me</h2>
+        <span class="section-tag" data-i18n="about.tag">About Me</span>
+        <h2 class="section-title" data-i18n="about.title">Get to Know Me</h2>
       </div>
       <div class="about-grid">
         <div class="about-image-wrap" data-aos="fade-right" data-aos-duration="800">
@@ -197,13 +202,13 @@
           </div>
         </div>
         <div class="about-content" data-aos="fade-left" data-aos-duration="800">
-          <p class="about-text">
+          <p class="about-text" data-i18n="about.p1">
             Hello! I'm <strong>Putri Indah Cahyani</strong>, a Fresh Graduate in <strong>Information Technology</strong> from <strong>Universitas 'Aisyiyah Yogyakarta</strong> with a GPA of <strong>3.80 / 4.00</strong>.
           </p>
-          <p class="about-text">
+          <p class="about-text" data-i18n="about.p2">
             I have comprehensive experience in <strong>web development, data processing, machine learning, and data engineering</strong>. Skilled in <strong>Laravel, PHP, Python, MySQL, PostgreSQL, Excel, and Google Sheets</strong>, with proven hands-on experience in <strong>Quality Assurance (QA), data validation, documentation, administrative support, Tracer Study, and accreditation</strong>.
           </p>
-          <p class="about-text">
+          <p class="about-text" data-i18n="about.p3">
             Detail-oriented, adaptive, and proficient in problem-solving, communication, and both independent and team-based work.
           </p>
           <div class="about-highlights">
@@ -211,7 +216,7 @@
               <div class="highlight-icon"><i class="fas fa-graduation-cap"></i></div>
               <div>
                 <strong>Universitas 'Aisyiyah Yogyakarta</strong>
-                <p>S1 Information Technology | GPA: 3.80 / 4.00 (2022 – 2026)</p>
+                <p data-i18n="about.highlight_edu_sub">S1 Information Technology | GPA: 3.80 / 4.00 (2022 – 2026)</p>
               </div>
             </div>
             <div class="highlight-item">
@@ -224,8 +229,8 @@
             <div class="highlight-item">
               <div class="highlight-icon"><i class="fas fa-certificate"></i></div>
               <div>
-                <strong>Certified Business Intelligence Analyst</strong>
-                <p>BNSP – LSP Digital (2026 – 2029)</p>
+                <strong data-i18n="about.highlight_cert_title">Certified Business Intelligence Analyst</strong>
+                <p data-i18n="about.highlight_cert_sub">BNSP – LSP Digital (2026 – 2029)</p>
               </div>
             </div>
           </div>
@@ -238,8 +243,8 @@
   <section class="education" id="education">
     <div class="container">
       <div class="section-header" data-aos="fade-up">
-        <span class="section-tag">Education History</span>
-        <h2 class="section-title">Academic Journey</h2>
+        <span class="section-tag" data-i18n="education.tag">Education History</span>
+        <h2 class="section-title" data-i18n="education.title">Academic Journey</h2>
       </div>
       <div class="timeline">
         <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
@@ -252,8 +257,8 @@
               2019 – 2022
             </div>
             <h3 class="timeline-title">SMA Negeri 1 Bukit Kemuning</h3>
-            <p class="timeline-subtitle">Science</p>
-            <p class="timeline-desc">Completed high school majoring in Science while actively participating in OSIS (Student Council) and
+            <p class="timeline-subtitle" data-i18n="education.sma_sub">Science</p>
+            <p class="timeline-desc" data-i18n="education.sma_desc">Completed high school majoring in Science while actively participating in OSIS (Student Council) and
               PMR (Youth Red Cross), developing leadership, social awareness, and teamwork skills.</p>
             <div class="timeline-tags">
               <span class="tag">Science</span>
@@ -272,12 +277,12 @@
               <i class="fas fa-calendar-alt"></i>
               2022 – 2026
             </div>
-            <div class="current-badge" style="background:rgba(34,197,94,0.15);color:#16a34a;">
+            <div class="current-badge" style="background:rgba(34,197,94,0.15);color:#16a34a;" data-i18n="education.univ_badge">
               <i class="fas fa-check-circle" style="color:#16a34a;"></i> Graduated · GPA 3.80
             </div>
             <h3 class="timeline-title">Universitas 'Aisyiyah Yogyakarta</h3>
-            <p class="timeline-subtitle">S1 Information Technology | GPA: 3.80 / 4.00</p>
-            <p class="timeline-desc">Graduated with high honors (GPA 3.80/4.00). Actively focused on Web Development, Machine Learning, Data Engineering, and contributed significantly to the Tracer Study &amp; Accreditation Team as well as HIMA ITECH.</p>
+            <p class="timeline-subtitle" data-i18n="education.univ_sub">S1 Information Technology | GPA: 3.80 / 4.00</p>
+            <p class="timeline-desc" data-i18n="education.univ_desc">Graduated with high honors (GPA 3.80/4.00). Actively focused on Web Development, Machine Learning, Data Engineering, and contributed significantly to the Tracer Study &amp; Accreditation Team as well as HIMA ITECH.</p>
             <div class="timeline-tags">
               <span class="tag" style="background:rgba(236,72,153,0.1);color:var(--pink-accent);">GPA 3.80 / 4.00</span>
               <span class="tag">Fresh Graduate</span>
@@ -293,15 +298,15 @@
   <section class="skills" id="skills">
     <div class="container">
       <div class="section-header" data-aos="fade-up">
-        <span class="section-tag">Expertise</span>
-        <h2 class="section-title">Skills &amp; Abilities</h2>
+        <span class="section-tag" data-i18n="skills.tag">Expertise</span>
+        <h2 class="section-title" data-i18n="skills.title">Skills &amp; Abilities</h2>
       </div>
       <div class="skills-grid">
         <!-- Hard Skills -->
         <div class="skills-group" data-aos="fade-right" data-aos-duration="800">
           <div class="skills-group-header">
             <div class="skills-group-icon"><i class="fas fa-laptop-code"></i></div>
-            <h3>Technical &amp; Hard Skills</h3>
+            <h3 data-i18n="skills.hard_heading">Technical &amp; Hard Skills</h3>
           </div>
           <div class="skill-cards">
             <!-- Web Development -->
@@ -410,38 +415,38 @@
         <div class="skills-group" data-aos="fade-left" data-aos-duration="800">
           <div class="skills-group-header">
             <div class="skills-group-icon"><i class="fas fa-heart"></i></div>
-            <h3>Professional Soft Skills</h3>
+            <h3 data-i18n="skills.soft_heading">Professional Soft Skills</h3>
           </div>
           <div class="soft-skill-cards">
             <div class="soft-card" data-aos="zoom-in" data-aos-delay="100">
               <div class="soft-icon"><i class="fas fa-users"></i></div>
-              <h4>Teamwork &amp; Collaboration</h4>
-              <p>Effective in cross-functional team collaboration, synchronization, and peer review.</p>
+              <h4 data-i18n="skills.team_title">Teamwork &amp; Collaboration</h4>
+              <p data-i18n="skills.team_desc">Effective in cross-functional team collaboration, synchronization, and peer review.</p>
             </div>
             <div class="soft-card" data-aos="zoom-in" data-aos-delay="150">
               <div class="soft-icon"><i class="fas fa-check-circle"></i></div>
-              <h4>Data Validation &amp; Detail</h4>
-              <p>Meticulous precision in data auditing, tracer study monitoring, and document archiving.</p>
+              <h4 data-i18n="skills.data_title">Data Validation &amp; Detail</h4>
+              <p data-i18n="skills.data_desc">Meticulous precision in data auditing, tracer study monitoring, and document archiving.</p>
             </div>
             <div class="soft-card" data-aos="zoom-in" data-aos-delay="200">
               <div class="soft-icon"><i class="fas fa-comments"></i></div>
-              <h4>Communication</h4>
-              <p>Clear, articulate communication with alumni, stakeholders, and multidisciplinary teams.</p>
+              <h4 data-i18n="skills.comm_title">Communication</h4>
+              <p data-i18n="skills.comm_desc">Clear, articulate communication with alumni, stakeholders, and multidisciplinary teams.</p>
             </div>
             <div class="soft-card" data-aos="zoom-in" data-aos-delay="250">
               <div class="soft-icon"><i class="fas fa-clock"></i></div>
-              <h4>Time Management</h4>
-              <p>Disciplined prioritization to meet demanding project and accreditation deadlines.</p>
+              <h4 data-i18n="skills.time_title">Time Management</h4>
+              <p data-i18n="skills.time_desc">Disciplined prioritization to meet demanding project and accreditation deadlines.</p>
             </div>
             <div class="soft-card" data-aos="zoom-in" data-aos-delay="300">
               <div class="soft-icon"><i class="fas fa-lightbulb"></i></div>
-              <h4>Problem Solving</h4>
-              <p>Analytical thinking to diagnose system bugs, optimize workflows, and develop ML pipelines.</p>
+              <h4 data-i18n="skills.prob_title">Problem Solving</h4>
+              <p data-i18n="skills.prob_desc">Analytical thinking to diagnose system bugs, optimize workflows, and develop ML pipelines.</p>
             </div>
             <div class="soft-card" data-aos="zoom-in" data-aos-delay="350">
               <div class="soft-icon"><i class="fas fa-sync-alt"></i></div>
-              <h4>Adaptability</h4>
-              <p>Fast learner quick to adopt new frameworks, architectures, and emerging technologies.</p>
+              <h4 data-i18n="skills.adapt_title">Adaptability</h4>
+              <p data-i18n="skills.adapt_desc">Fast learner quick to adopt new frameworks, architectures, and emerging technologies.</p>
             </div>
           </div>
         </div>
@@ -453,8 +458,8 @@
   <section class="certifications" id="certifications">
     <div class="container">
       <div class="section-header" data-aos="fade-up">
-        <span class="section-tag">Credentials</span>
-        <h2 class="section-title">Certifications &amp; Training</h2>
+        <span class="section-tag" data-i18n="cert.tag">Credentials</span>
+        <h2 class="section-title" data-i18n="cert.title">Certifications &amp; Training</h2>
       </div>
       <div class="cert-grid">
         <div class="cert-card" data-aos="fade-right" data-aos-duration="800">
@@ -462,11 +467,11 @@
             <i class="fas fa-certificate"></i>
           </div>
           <div class="cert-info">
-            <span class="tag" style="background:rgba(34,197,94,0.15);color:#16a34a;margin-bottom:8px;display:inline-block;"><i class="fas fa-check-circle"></i> Certified</span>
+            <span class="tag" style="background:rgba(34,197,94,0.15);color:#16a34a;margin-bottom:8px;display:inline-block;" data-i18n="cert.badge_certified"><i class="fas fa-check-circle"></i> Certified</span>
             <h3>Business Intelligence Analyst</h3>
             <p class="cert-issuer"><i class="fas fa-building"></i> BNSP – LSP Digital</p>
             <p class="cert-date"><i class="fas fa-calendar-alt"></i> Aug 2026 – Aug 2029</p>
-            <p class="cert-desc">Certified national professional competency in Business Intelligence, data analytics, dimensional modeling, KPI dashboards, and business insights generation.</p>
+            <p class="cert-desc" data-i18n="cert.c1_desc">Certified national professional competency in Business Intelligence, data analytics, dimensional modeling, KPI dashboards, and business insights generation.</p>
           </div>
         </div>
 
@@ -475,11 +480,11 @@
             <i class="fas fa-chalkboard-teacher"></i>
           </div>
           <div class="cert-info">
-            <span class="tag" style="background:rgba(59,130,246,0.15);color:#2563eb;margin-bottom:8px;display:inline-block;"><i class="fas fa-award"></i> Intensive Training</span>
+            <span class="tag" style="background:rgba(59,130,246,0.15);color:#2563eb;margin-bottom:8px;display:inline-block;" data-i18n="cert.badge_training"><i class="fas fa-award"></i> Intensive Training</span>
             <h3>Business Intelligence Analyst Training</h3>
             <p class="cert-issuer"><i class="fas fa-university"></i> CV. Humanika Technoria</p>
             <p class="cert-date"><i class="fas fa-calendar-alt"></i> Aug 2026</p>
-            <p class="cert-desc">Comprehensive training in data warehouse design, ETL workflows, data visualization, business reporting, and practical analytics problem-solving.</p>
+            <p class="cert-desc" data-i18n="cert.c2_desc">Comprehensive training in data warehouse design, ETL workflows, data visualization, business reporting, and practical analytics problem-solving.</p>
           </div>
         </div>
       </div>
@@ -490,18 +495,18 @@
   <section class="projects" id="projects">
     <div class="container">
       <div class="section-header" data-aos="fade-up">
-        <span class="section-tag">Portfolio</span>
-        <h2 class="section-title">My Projects</h2>
-        <p class="section-subtitle">Showcase of web applications, machine learning systems, data engineering pipelines, and health tech solutions</p>
+        <span class="section-tag" data-i18n="projects.tag">Portfolio</span>
+        <h2 class="section-title" data-i18n="projects.title">My Projects</h2>
+        <p class="section-subtitle" data-i18n="projects.subtitle">Showcase of web applications, machine learning systems, data engineering pipelines, and health tech solutions</p>
       </div>
 
       <!-- Project Category Filters -->
       <div class="project-filters" data-aos="fade-up" data-aos-delay="100">
-        <button class="filter-btn active" data-filter="all">All Projects (18)</button>
-        <button class="filter-btn" data-filter="web">Web Development</button>
-        <button class="filter-btn" data-filter="ml">Machine Learning &amp; AI</button>
-        <button class="filter-btn" data-filter="data">Data Engineering &amp; Analytics</button>
-        <button class="filter-btn" data-filter="other">Other Applications</button>
+        <button class="filter-btn active" data-filter="all" data-i18n="projects.filter_all">All Projects (18)</button>
+        <button class="filter-btn" data-filter="web" data-i18n="projects.filter_web">Web Development</button>
+        <button class="filter-btn" data-filter="ml" data-i18n="projects.filter_ml">Machine Learning &amp; AI</button>
+        <button class="filter-btn" data-filter="data" data-i18n="projects.filter_data">Data Engineering &amp; Analytics</button>
+        <button class="filter-btn" data-filter="other" data-i18n="projects.filter_other">Other Applications</button>
       </div>
 
       <div class="projects-grid">
@@ -516,7 +521,7 @@
             <div class="project-category">Full Stack Web</div>
           </div>
           <h3 class="project-title">MBG Monitor</h3>
-          <p class="project-desc">A full-stack web application for real-time monitoring of Free Nutritional Meal (MBG) distribution, equipped with courier GPS tracking via WebSocket, nutrition menu management, financial reports, and a public dashboard based on Laravel &amp; Vite.</p>
+          <p class="project-desc" data-i18n="projects.mbg_desc">A full-stack web application for real-time monitoring of Free Nutritional Meal (MBG) distribution, equipped with courier GPS tracking via WebSocket, nutrition menu management, financial reports, and a public dashboard based on Laravel &amp; Vite.</p>
           <div class="project-tech">
             <span class="tech-badge"><i class="devicon-laravel-plain"></i> Laravel</span>
             <span class="tech-badge"><i class="devicon-vuejs-plain"></i> Vue.js</span>
@@ -524,7 +529,7 @@
             <span class="tech-badge"><i class="fas fa-bolt"></i> WebSocket</span>
           </div>
           <div class="project-footer">
-            <button class="btn-detail" onclick="openModal('modal_mbg')">
+            <button class="btn-detail" data-i18n="projects.btn_detail" onclick="openModal('modal_mbg')">
               <i class="fas fa-external-link-alt"></i> View Details
             </button>
             <a href="https://github.com/Pxuutzzzz/mbg-monitoring" target="_blank" class="btn-code" title="View Source on GitHub">
@@ -543,7 +548,7 @@
             <div class="project-category">Data Engineering</div>
           </div>
           <h3 class="project-title">Nexora – Data Analytics Platform</h3>
-          <p class="project-desc">A dbt-based e-commerce data analytics platform with an end-to-end transformation pipeline, including staging layer, intermediate models for order &amp; cart item aggregation, and ready-to-use marts for business reporting built on modular SQL with automatic schema validation.</p>
+          <p class="project-desc" data-i18n="projects.nexora_desc">A dbt-based e-commerce data analytics platform with an end-to-end transformation pipeline, including staging layer, intermediate models for order &amp; cart item aggregation, and ready-to-use marts for business reporting built on modular SQL with automatic schema validation.</p>
           <div class="project-tech">
             <span class="tech-badge"><i class="fas fa-layer-group"></i> dbt</span>
             <span class="tech-badge"><i class="fas fa-database"></i> Modular SQL</span>
@@ -551,7 +556,7 @@
             <span class="tech-badge"><i class="fas fa-shield-alt"></i> Validation</span>
           </div>
           <div class="project-footer">
-            <button class="btn-detail" onclick="openModal('modal_nexora')">
+            <button class="btn-detail" data-i18n="projects.btn_detail" onclick="openModal('modal_nexora')">
               <i class="fas fa-external-link-alt"></i> View Details
             </button>
             <a href="https://github.com/Pxuutzzzz/NEXORA" target="_blank" class="btn-code" title="View Source on GitHub">
@@ -577,7 +582,7 @@
             <span class="tech-badge"><i class="fas fa-users-cog"></i> Multi-Role</span>
           </div>
           <div class="project-footer">
-            <button class="btn-detail" onclick="openModal('modal_misoa')">
+            <button class="btn-detail" data-i18n="projects.btn_detail" onclick="openModal('modal_misoa')">
               <i class="fas fa-external-link-alt"></i> View Details
             </button>
             <a href="https://github.com/Pxuutzzzz/Katalog-misoa" target="_blank" class="btn-code" title="View Source on GitHub">
@@ -602,7 +607,7 @@
             <span class="tech-badge"><i class="fas fa-globe"></i> Web System</span>
           </div>
           <div class="project-footer">
-            <button class="btn-detail" onclick="openModal('modal9')">
+            <button class="btn-detail" data-i18n="projects.btn_detail" onclick="openModal('modal9')">
               <i class="fas fa-external-link-alt"></i> View Details
             </button>
             <a href="https://github.com/Pxuutzzzz/mental_health_predictor" target="_blank" class="btn-code" title="View Source on GitHub">
@@ -627,7 +632,7 @@
             <span class="tech-badge"><i class="fab fa-x-twitter"></i> Twitter/X API</span>
           </div>
           <div class="project-footer">
-            <button class="btn-detail" onclick="openModal('modal10')">
+            <button class="btn-detail" data-i18n="projects.btn_detail" onclick="openModal('modal10')">
               <i class="fas fa-external-link-alt"></i> View Details
             </button>
             <a href="https://github.com/Pxuutzzzz/pfs-kelompok-4" target="_blank" class="btn-code" title="View Source on GitHub">
@@ -652,7 +657,7 @@
             <span class="tech-badge"><i class="fas fa-chart-pie"></i> Financial SPK</span>
           </div>
           <div class="project-footer">
-            <button class="btn-detail" onclick="openModal('modal8')">
+            <button class="btn-detail" data-i18n="projects.btn_detail" onclick="openModal('modal8')">
               <i class="fas fa-external-link-alt"></i> View Details
             </button>
             <a href="https://github.com/Pxuutzzzz/CBL-SIAB" target="_blank" class="btn-code" title="View Source on GitHub">
@@ -677,7 +682,7 @@
             <span class="tech-badge"><i class="fas fa-file-alt"></i> LAMINFOKOM</span>
           </div>
           <div class="project-footer">
-            <button class="btn-detail" onclick="openModal('modal_tracer')">
+            <button class="btn-detail" data-i18n="projects.btn_detail" onclick="openModal('modal_tracer')">
               <i class="fas fa-external-link-alt"></i> View Details
             </button>
           </div>
@@ -699,7 +704,7 @@
             <span class="tech-badge"><i class="fas fa-chart-bar"></i> EDA Analytics</span>
           </div>
           <div class="project-footer">
-            <button class="btn-detail" onclick="openModal('modal_obesitas')">
+            <button class="btn-detail" data-i18n="projects.btn_detail" onclick="openModal('modal_obesitas')">
               <i class="fas fa-external-link-alt"></i> View Details
             </button>
             <a href="https://github.com/Pxuutzzzz/obesity-project" target="_blank" class="btn-code" title="View Source on GitHub">
@@ -724,7 +729,7 @@
             <span class="tech-badge"><i class="fas fa-brain"></i> Random Forest</span>
           </div>
           <div class="project-footer">
-            <button class="btn-detail" onclick="openModal('modal_stroke')">
+            <button class="btn-detail" data-i18n="projects.btn_detail" onclick="openModal('modal_stroke')">
               <i class="fas fa-external-link-alt"></i> View Details
             </button>
             <a href="https://github.com/Pxuutzzzz/stroke-prediction" target="_blank" class="btn-code" title="View Source on GitHub">
@@ -749,7 +754,7 @@
             <span class="tech-badge"><i class="fas fa-tree"></i> Random Forest</span>
           </div>
           <div class="project-footer">
-            <button class="btn-detail" onclick="openModal('modal_typhoid')">
+            <button class="btn-detail" data-i18n="projects.btn_detail" onclick="openModal('modal_typhoid')">
               <i class="fas fa-external-link-alt"></i> View Details
             </button>
             <a href="https://github.com/Pxuutzzzz/typhoid_predictor" target="_blank" class="btn-code" title="View Source on GitHub">
@@ -774,7 +779,7 @@
             <span class="tech-badge"><i class="fab fa-x-twitter"></i> Twitter/X Scraping</span>
           </div>
           <div class="project-footer">
-            <button class="btn-detail" onclick="openModal('modal_ikn')">
+            <button class="btn-detail" data-i18n="projects.btn_detail" onclick="openModal('modal_ikn')">
               <i class="fas fa-external-link-alt"></i> View Details
             </button>
             <a href="https://github.com/Pxuutzzzz/project-sentimen-genz" target="_blank" class="btn-code" title="View Source on GitHub">
@@ -799,7 +804,7 @@
             <span class="tech-badge"><i class="fas fa-medal" style="color:#d97706;"></i> Gold Medal</span>
           </div>
           <div class="project-footer">
-            <button class="btn-detail" onclick="openModal('modal4')">
+            <button class="btn-detail" data-i18n="projects.btn_detail" onclick="openModal('modal4')">
               <i class="fas fa-external-link-alt"></i> View Details
             </button>
             <a href="https://github.com/Pxuutzzzz/HealthNav" target="_blank" class="btn-code" title="View Source on GitHub">
@@ -824,7 +829,7 @@
             <span class="tech-badge"><i class="devicon-mysql-plain"></i> MySQL</span>
           </div>
           <div class="project-footer">
-            <button class="btn-detail" onclick="openModal('modal3')">
+            <button class="btn-detail" data-i18n="projects.btn_detail" onclick="openModal('modal3')">
               <i class="fas fa-external-link-alt"></i> View Details
             </button>
             <a href="https://github.com/Pxuutzzzz/rekam-medis-sda" target="_blank" class="btn-code" title="View Source on GitHub">
@@ -849,7 +854,7 @@
             <span class="tech-badge"><i class="fas fa-database"></i> OOP</span>
           </div>
           <div class="project-footer">
-            <button class="btn-detail" onclick="openModal('modal6')">
+            <button class="btn-detail" data-i18n="projects.btn_detail" onclick="openModal('modal6')">
               <i class="fas fa-external-link-alt"></i> View Details
             </button>
           </div>
@@ -870,7 +875,7 @@
             <span class="tech-badge"><i class="fas fa-database"></i> OOP</span>
           </div>
           <div class="project-footer">
-            <button class="btn-detail" onclick="openModal('modal1')">
+            <button class="btn-detail" data-i18n="projects.btn_detail" onclick="openModal('modal1')">
               <i class="fas fa-external-link-alt"></i> View Details
             </button>
           </div>
@@ -892,7 +897,7 @@
             <span class="tech-badge"><i class="fas fa-flask"></i> PKM</span>
           </div>
           <div class="project-footer">
-            <button class="btn-detail" onclick="openModal('modal7')">
+            <button class="btn-detail" data-i18n="projects.btn_detail" onclick="openModal('modal7')">
               <i class="fas fa-external-link-alt"></i> View Details
             </button>
           </div>
@@ -913,7 +918,7 @@
             <span class="tech-badge"><i class="fas fa-palette"></i> UI/UX</span>
           </div>
           <div class="project-footer">
-            <button class="btn-detail" onclick="openModal('modal2')">
+            <button class="btn-detail" data-i18n="projects.btn_detail" onclick="openModal('modal2')">
               <i class="fas fa-external-link-alt"></i> View Details
             </button>
           </div>
@@ -934,7 +939,7 @@
             <span class="tech-badge"><i class="fas fa-chart-bar"></i> Data Analysis</span>
           </div>
           <div class="project-footer">
-            <button class="btn-detail" onclick="openModal('modal5')">
+            <button class="btn-detail" data-i18n="projects.btn_detail" onclick="openModal('modal5')">
               <i class="fas fa-external-link-alt"></i> View Details
             </button>
           </div>
@@ -1431,8 +1436,8 @@
   <section class="experience" id="experience">
     <div class="container">
       <div class="section-header" data-aos="fade-up">
-        <span class="section-tag">Experience</span>
-        <h2 class="section-title">Organizations &amp; Activities</h2>
+        <span class="section-tag" data-i18n="experience.tag">Experience</span>
+        <h2 class="section-title" data-i18n="experience.title">Organizations &amp; Activities</h2>
       </div>
       <div class="timeline">
 
@@ -1443,16 +1448,16 @@
           </div>
           <div class="timeline-card">
             <div class="timeline-period"><i class="fas fa-calendar-alt"></i> 2026</div>
-            <h3 class="timeline-title">Surveyor Tracer Study &amp; Accreditation Team</h3>
+            <h3 class="timeline-title" data-i18n="experience.tracer_title">Surveyor Tracer Study &amp; Accreditation Team</h3>
             <p class="timeline-subtitle">Program Studi Teknologi Informasi – Universitas 'Aisyiyah Yogyakarta</p>
             <ul class="timeline-desc" style="padding-left:1.2rem;margin:0 0 12px 0;">
-              <li>Collect data and contact alumni of the Information Technology Study Program to complete the Tracer Study questionnaire.</li>
-              <li>Communicate and follow up with alumni regarding questionnaire completion.</li>
-              <li>Manage, summarize, and monitor Tracer Study data using Microsoft Excel.</li>
-              <li>Check and validate data to ensure completeness and accuracy of information.</li>
-              <li>Archive and manage supporting documents for the Tracer Study and accreditation.</li>
-              <li>Involved in data and document preparation for LAMINFOKOM accreditation and GA Accreditation of the Information Technology Study Program.</li>
-              <li>Coordinate with the team in collecting, checking, and compiling data and documents.</li>
+              <li data-i18n="experience.tracer_b1">Collect data and contact alumni of the Information Technology Study Program to complete the Tracer Study questionnaire.</li>
+              <li data-i18n="experience.tracer_b2">Communicate and follow up with alumni regarding questionnaire completion.</li>
+              <li data-i18n="experience.tracer_b3">Manage, summarize, and monitor Tracer Study data using Microsoft Excel.</li>
+              <li data-i18n="experience.tracer_b4">Check and validate data to ensure completeness and accuracy of information.</li>
+              <li data-i18n="experience.tracer_b5">Archive and manage supporting documents for the Tracer Study and accreditation.</li>
+              <li data-i18n="experience.tracer_b6">Involved in data and document preparation for LAMINFOKOM accreditation and GA Accreditation of the Information Technology Study Program.</li>
+              <li data-i18n="experience.tracer_b7">Coordinate with the team in collecting, checking, and compiling data and documents.</li>
             </ul>
             <div class="timeline-tags">
               <span class="tag"><i class="fas fa-search"></i> Tracer Study</span>
@@ -1470,9 +1475,9 @@
           </div>
           <div class="timeline-card">
             <div class="timeline-period"><i class="fas fa-calendar-alt"></i> 2026</div>
-            <h3 class="timeline-title">First Place – APSI-PTMA Scientific Writing Competition</h3>
+            <h3 class="timeline-title" data-i18n="experience.apsi_title">First Place – APSI-PTMA Scientific Writing Competition</h3>
             <p class="timeline-subtitle">Musyawarah Nasional APSI-PTMA 2026</p>
-            <p class="timeline-desc">Awarded <strong>1st Place (Juara I)</strong> in the National Scientific Writing Competition (Lomba Karya Tulis Ilmiah) at the APSI-PTMA National Conference 2026.</p>
+            <p class="timeline-desc" data-i18n="experience.apsi_desc">Awarded <strong>1st Place (Juara I)</strong> in the National Scientific Writing Competition (Lomba Karya Tulis Ilmiah) at the APSI-PTMA National Conference 2026.</p>
             <div class="timeline-tags">
               <span class="tag" style="background:rgba(251,191,36,0.15);color:#d97706;"><i class="fas fa-trophy"></i> Juara I</span>
               <span class="tag"><i class="fas fa-pen-nib"></i> Scientific Writing</span>
@@ -1487,13 +1492,13 @@
           </div>
           <div class="timeline-card">
             <div class="timeline-period"><i class="fas fa-calendar-alt"></i> Oct 2024 – Jan 2025</div>
-            <h3 class="timeline-title">Full Stack Developer Internship – IT Team</h3>
+            <h3 class="timeline-title" data-i18n="experience.queen_title">Full Stack Developer Internship – IT Team</h3>
             <p class="timeline-subtitle">Queen Latifah Hospital Yogyakarta</p>
             <ul class="timeline-desc" style="padding-left:1.2rem;margin:0 0 12px 0;">
-              <li>Developed and maintained an internal web system to support hospital operations and patient data management.</li>
-              <li>Contributed to the digitalization of healthcare workflows using Laravel and MySQL.</li>
-              <li>Conducted quality assurance (QA) testing and data input into the medical information system.</li>
-              <li>Coordinated with the cross-functional team in the development and maintenance of the hospital information system.</li>
+              <li data-i18n="experience.queen_b1">Developed and maintained an internal web system to support hospital operations and patient data management.</li>
+              <li data-i18n="experience.queen_b2">Contributed to the digitalization of healthcare workflows using Laravel and MySQL.</li>
+              <li data-i18n="experience.queen_b3">Conducted quality assurance (QA) testing and data input into the medical information system.</li>
+              <li data-i18n="experience.queen_b4">Coordinated with the cross-functional team in the development and maintenance of the hospital information system.</li>
             </ul>
             <div class="timeline-tags">
               <span class="tag"><i class="devicon-laravel-plain"></i> Laravel</span>
@@ -1511,9 +1516,9 @@
           </div>
           <div class="timeline-card">
             <div class="timeline-period"><i class="fas fa-calendar-alt"></i> 2025</div>
-            <h3 class="timeline-title">Participant – Excess 2025</h3>
+            <h3 class="timeline-title" data-i18n="experience.excess_title">Participant – Excess 2025</h3>
             <p class="timeline-subtitle">International Essay Competition</p>
-            <p class="timeline-desc">Participated as a delegate in the Excess 2025 international-level essay competition, demonstrating critical analytical thinking, research, and global technological perspectives.</p>
+            <p class="timeline-desc" data-i18n="experience.excess_desc">Participated as a delegate in the Excess 2025 international-level essay competition, demonstrating critical analytical thinking, research, and global technological perspectives.</p>
             <div class="timeline-tags">
               <span class="tag"><i class="fas fa-pen"></i> Essay</span>
               <span class="tag"><i class="fas fa-globe-americas"></i> International</span>
@@ -1528,9 +1533,9 @@
           </div>
           <div class="timeline-card">
             <div class="timeline-period"><i class="fas fa-calendar-alt"></i> 9 October 2024</div>
-            <h3 class="timeline-title">Gold Medal – KMM &amp; PKM 2024</h3>
+            <h3 class="timeline-title" data-i18n="experience.gold_title">Gold Medal – KMM &amp; PKM 2024</h3>
             <p class="timeline-subtitle">Software Application Development Category</p>
-            <p class="timeline-desc">Awarded the <strong>Gold Medal</strong> for the project titled <em>"Sistem Informasi Kesehatan Pengembangan Perangkat Lunak Medical Tourism Berbasis Aplikasi Android di Purwokerto"</em>.</p>
+            <p class="timeline-desc" data-i18n="experience.gold_desc">Awarded the <strong>Gold Medal</strong> for the project titled <em>"Sistem Informasi Kesehatan Pengembangan Perangkat Lunak Medical Tourism Berbasis Aplikasi Android di Purwokerto"</em>.</p>
             <div class="timeline-tags">
               <span class="tag" style="background:rgba(251,191,36,0.15);color:#d97706;"><i class="fas fa-star"></i> Gold Medal</span>
               <span class="tag"><i class="fab fa-android"></i> Android / HealthNav</span>
@@ -1545,9 +1550,9 @@
           </div>
           <div class="timeline-card">
             <div class="timeline-period"><i class="fas fa-calendar-alt"></i> 2024</div>
-            <h3 class="timeline-title">Participant – GEMASTIK 2024</h3>
+            <h3 class="timeline-title" data-i18n="experience.gemastik24_title">Participant – GEMASTIK 2024</h3>
             <p class="timeline-subtitle">National Student Exhibition in ICT (Competitive Programming)</p>
-            <p class="timeline-desc">Competed as a contestant in the National Student Exhibition in Information and Communication Technology (GEMASTIK XVII 2024) in the competitive programming division.</p>
+            <p class="timeline-desc" data-i18n="experience.gemastik24_desc">Competed as a contestant in the National Student Exhibition in Information and Communication Technology (GEMASTIK XVII 2024) in the competitive programming division.</p>
             <div class="timeline-tags">
               <span class="tag"><i class="fas fa-laptop-code"></i> Competitive Programming</span>
               <span class="tag"><i class="fas fa-trophy"></i> GEMASTIK</span>
@@ -1562,7 +1567,7 @@
           </div>
           <div class="timeline-card">
             <div class="timeline-period"><i class="fas fa-calendar-alt"></i> 16 July 2023</div>
-            <h3 class="timeline-title">Programming Team – GEMASTIK 2023</h3>
+            <h3 class="timeline-title" data-i18n="experience.gemastik23_title">Programming Team – GEMASTIK 2023</h3>
             <p class="timeline-subtitle">National Student Exhibition in ICT</p>
             <p class="timeline-desc">Participated as a key member in the competitive programming division, applying advanced algorithmic techniques and C++ to solve complex computational challenges.</p>
             <div class="timeline-tags">
@@ -1631,9 +1636,9 @@
   <section class="contact" id="contact">
     <div class="container">
       <div class="section-header" data-aos="fade-up">
-        <span class="section-tag">Get In Touch</span>
-        <h2 class="section-title">Contact Me</h2>
-        <p class="section-subtitle">Have a question or want to collaborate? Feel free to reach out!</p>
+        <span class="section-tag" data-i18n="contact.tag">Get In Touch</span>
+        <h2 class="section-title" data-i18n="contact.title">Contact Me</h2>
+        <p class="section-subtitle" data-i18n="contact.subtitle">Have a question or want to collaborate? Feel free to reach out!</p>
       </div>
       <div class="contact-grid">
         <div class="contact-info" data-aos="fade-right" data-aos-duration="800">
@@ -1688,23 +1693,23 @@
         <div class="contact-form-wrap" data-aos="fade-left" data-aos-duration="800">
           <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
             <div class="form-group">
-              <label for="name"><i class="fas fa-user"></i> Full Name</label>
-              <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+              <label for="name" data-i18n="contact.lbl_name"><i class="fas fa-user"></i> Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your full name" data-i18n-placeholder="contact.placeholder_name" required />
             </div>
             <div class="form-group">
-              <label for="email"><i class="fas fa-envelope"></i> Email</label>
+              <label for="email" data-i18n="contact.lbl_email"><i class="fas fa-envelope"></i> Email</label>
               <input type="email" id="email" name="email" placeholder="email@example.com" required />
             </div>
             <div class="form-group">
-              <label for="subject"><i class="fas fa-tag"></i> Subject</label>
-              <input type="text" id="subject" name="subject" placeholder="Topic of your message" required />
+              <label for="subject" data-i18n="contact.lbl_subject"><i class="fas fa-tag"></i> Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Topic of your message" data-i18n-placeholder="contact.placeholder_subject" required />
             </div>
             <div class="form-group">
-              <label for="message"><i class="fas fa-comment"></i> Message</label>
-              <textarea id="message" name="message" rows="5" placeholder="Write your message here..."
+              <label for="message" data-i18n="contact.lbl_message"><i class="fas fa-comment"></i> Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Write your message here..." data-i18n-placeholder="contact.placeholder_message"
                 required></textarea>
             </div>
-            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn" data-i18n="contact.btn_send">
               <i class="fas fa-paper-plane"></i>
               Send Message
             </button>
@@ -1728,7 +1733,7 @@
       <div class="footer-content">
         <div class="footer-brand">
           <span class="logo-text">Putri<span class="logo-accent">.</span></span>
-          <p>Passionate in Technology, Innovation, and Problem Solving</p>
+          <p data-i18n="footer.slogan">Passionate in Technology, Innovation, and Problem Solving</p>
           <div class="footer-socials">
             <a href="https://github.com/Pxuutzzzz" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
             <a href="https://www.linkedin.com/in/putri-indah-cahyani-85b181322/" target="_blank"
@@ -1739,7 +1744,7 @@
           </div>
         </div>
         <div class="footer-links">
-          <h4>Navigation</h4>
+          <h4 data-i18n="footer.nav_title">Navigation</h4>
           <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -1752,7 +1757,7 @@
           </ul>
         </div>
         <div class="footer-links">
-          <h4>Core Skills</h4>
+          <h4 data-i18n="footer.skills_title">Core Skills</h4>
           <ul>
             <li><a href="#skills">Laravel &amp; PHP</a></li>
             <li><a href="#skills">Python &amp; Machine Learning</a></li>
@@ -1763,7 +1768,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 Putri Indah Cahyani. All rights reserved. Fresh Graduate in Information Technology.</p>
+        <p data-i18n="footer.copyright">&copy; 2026 Putri Indah Cahyani. All rights reserved. Fresh Graduate in Information Technology.</p>
         <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top">
           <i class="fas fa-arrow-up"></i>
         </a>
@@ -1773,6 +1778,7 @@
 
   <!-- AOS Library -->
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="translations.js"></script>
   <script src="script.js"></script>
 </body>
 
